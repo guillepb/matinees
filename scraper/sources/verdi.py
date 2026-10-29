@@ -117,6 +117,12 @@ def fetch(cinema: dict, http: Http | None = None, today: date | None = None) -> 
     sessions: list[Session] = []
     errors = 0
     urls = parse_listing(listing.content)
+    if not urls:
+        soup = BeautifulSoup(listing.content, "lxml")
+        title = soup.title.get_text(strip=True) if soup.title else ""
+        raise RuntimeError(
+            f"cartelera sin películas (HTTP {listing.status_code}, {len(listing.content)} bytes, "
+            f"url={listing.url}, título={title!r}, texto={soup.get_text(' ', strip=True)[:160]!r})")
     for url in urls:
         try:
             sessions += parse_film(http.get(url).content, cinema, url)
