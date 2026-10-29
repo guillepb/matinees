@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-29T08:33:47+01:00",
+  "generated_at": "2026-10-29T08:36:17+01:00",
   "timezone": "Europe/Madrid",
   "sources": {
    "zumzeig": {
@@ -10,17 +10,17 @@
     "message": null,
     "count": 51,
     "stale": false,
-    "last_ok": "2026-10-29T08:33:47+01:00",
+    "last_ok": "2026-10-29T08:36:17+01:00",
     "last_date": "2026-12-03"
    },
    "verdi": {
     "name": "Cines Verdi",
     "source": "verdi",
-    "status": "error",
-    "message": "RuntimeError: 0 sesiones (posible cambio en la web)",
+    "status": "ok",
+    "message": null,
     "count": 310,
-    "stale": true,
-    "last_ok": "2026-10-29T08:27:27+01:00",
+    "stale": false,
+    "last_ok": "2026-10-29T08:36:17+01:00",
     "last_date": "2026-12-15"
    },
    "kinepolis-splau": {
@@ -30,7 +30,7 @@
     "message": null,
     "count": 405,
     "stale": false,
-    "last_ok": "2026-10-29T08:33:47+01:00",
+    "last_ok": "2026-10-29T08:36:17+01:00",
     "last_date": "2026-11-04"
    }
   }
