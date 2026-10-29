@@ -1,4 +1,7 @@
-"""Cines Verdi Barcelona (https://barcelona.cines-verdi.com).
+"""Cines Verdi Barcelona (https://barcelona.cines-verdi.com) y otros cines con la misma web.
+
+La misma plataforma la usa Cinemes Girona (https://www.cinemesgirona.cat): el dominio sale de
+cinema["url"], así que basta con `source: verdi` en config.yaml.
 
 Estructura observada (29/10/2026):
   /cartelera                  ul.collection > li > article .aside a[href]  -> slugs de película
@@ -16,7 +19,7 @@ import re
 import time
 import unicodedata
 from datetime import date, datetime
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -54,12 +57,18 @@ def parse_day(text: str) -> date | None:
         return None
 
 
-def parse_listing(html: bytes | str) -> list[str]:
+def _base(url: str) -> str:
+    """'https://www.cinemesgirona.cat/cartelera' -> 'https://www.cinemesgirona.cat/'."""
+    parts = urlsplit(url)
+    return f"{parts.scheme}://{parts.netloc}/"
+
+
+def parse_listing(html: bytes | str, base: str = BASE) -> list[str]:
     """URLs absolutas de las fichas de película de la cartelera, sin repetir."""
     soup = BeautifulSoup(html, "lxml")
     urls: list[str] = []
     for a in soup.select("ul.collection > li article .aside a[href]"):
-        url = urljoin(BASE, a["href"].split("?")[0])
+        url = urljoin(base, a["href"].split("?")[0])
         if url not in urls:
             urls.append(url)
     return urls
@@ -113,16 +122,18 @@ def parse_film(html: bytes | str, cinema: dict, film_url: str) -> list[Session]:
 
 def fetch(cinema: dict, http: Http | None = None, today: date | None = None) -> list[Session]:
     http = http or Http()
+    base = _base(cinema["url"])
+    name = cinema["name"]
     # La primera petición con ?lang=es deja el castellano en la cookie de sesión
     listing = http.get(cinema["url"], params={"lang": "es"})
     sessions: list[Session] = []
     errors = 0
-    urls = parse_listing(listing.content)
+    urls = parse_listing(listing.content, base)
     if not urls:  # visto una vez desde GitHub Actions, de forma puntual: un segundo intento
-        log.warning("Verdi: cartelera sin películas, reintentando en 10 s")
+        log.warning("%s: cartelera sin películas, reintentando en 10 s", name)
         time.sleep(10)
         listing = http.get(cinema["url"], params={"lang": "es"})
-        urls = parse_listing(listing.content)
+        urls = parse_listing(listing.content, base)
     if not urls:
         soup = BeautifulSoup(listing.content, "lxml")
         title = soup.title.get_text(strip=True) if soup.title else ""
@@ -134,7 +145,7 @@ def fetch(cinema: dict, http: Http | None = None, today: date | None = None) -> 
             sessions += parse_film(http.get(url).content, cinema, url)
         except Exception as e:  # una ficha rota no tumba la fuente entera
             errors += 1
-            log.warning("Verdi: error en %s: %s", url, e)
+            log.warning("%s: error en %s: %s", name, url, e)
     if urls and errors == len(urls):
-        raise RuntimeError(f"Verdi: fallaron las {errors} fichas")
+        raise RuntimeError(f"{name}: fallaron las {errors} fichas")
     return sessions

@@ -11,6 +11,7 @@ Cines seguidos a diario:
 | Zumzeig | [calendario de zumzeigcine.coop](https://zumzeigcine.coop/es/cine/calendari/) + fichas | Por sesión (próximas 3); después, la película en codetickets |
 | Cines Verdi Barcelona | [cartelera](https://barcelona.cines-verdi.com/cartelera) + fichas | Por sesión |
 | Kinépolis Full Splau | [Publicine](https://www.publicine.net/cartelera-cine/cornella-de-llobregat/kinepolis-barcelona-full-splau) | Por sesión |
+| Cinemes Girona | [cartelera](https://www.cinemesgirona.cat/cartelera) + fichas (misma plataforma que Verdi) | Por sesión |
 
 ## Cómo funciona
 
@@ -34,7 +35,7 @@ Requiere Python 3.12.
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
-.venv/bin/python -m scraper.run      # ~2 min: descarga las tres fuentes
+.venv/bin/python -m scraper.run      # ~2 min: descarga todas las fuentes
 .venv/bin/python -m scraper.build    # genera docs/matinees.json
 .venv/bin/python -m pytest           # tests contra los HTML guardados en tests/fixtures/
 

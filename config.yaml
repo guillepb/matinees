@@ -33,3 +33,9 @@ cinemas:
     url: https://www.publicine.net/cartelera-cine/cornella-de-llobregat/kinepolis-barcelona-full-splau
     tickets_url: https://kinepolis.es/?complex=PFULL
 
+  - id: cinemes-girona
+    name: Cinemes Girona
+    source: verdi                  # misma plataforma web que Verdi
+    url: https://www.cinemesgirona.cat/cartelera
+    tickets_url: https://www.cinemesgirona.cat/cartelera
+
