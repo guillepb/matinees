@@ -1,0 +1,85 @@
+name: Scraping diario
+
+on:
+  schedule:
+    # 06:17 en Madrid: 04:17 UTC en horario de verano (CEST), 05:17 UTC en invierno (CET).
+    # Se programan las dos y el primer paso descarta la que no toca.
+    - cron: "17 4 * * *"
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      skip: ${{ steps.when.outputs.skip }}
+    steps:
+      - name: ¿Toca ejecutar hoy a esta hora?
+        id: when
+        run: |
+          offset=$(TZ=Europe/Madrid date +%z)   # +0200 en verano, +0100 en invierno
+          skip=false
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ "$offset" = "+0200" ] && [ "${{ github.event.schedule }}" != "17 4 * * *" ]; then skip=true; fi
+            if [ "$offset" = "+0100" ] && [ "${{ github.event.schedule }}" != "17 5 * * *" ]; then skip=true; fi
+          fi
+          echo "Madrid UTC$offset, cron '${{ github.event.schedule }}' -> skip=$skip"
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        if: steps.when.outputs.skip == 'false'
+
+      - uses: actions/setup-python@v5
+        if: steps.when.outputs.skip == 'false'
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        if: steps.when.outputs.skip == 'false'
+        run: pip install -r requirements.txt
+
+      - name: Scraping (run.py)
+        if: steps.when.outputs.skip == 'false'
+        # Si fallan TODAS las fuentes, run.py sale con 1: se publica igualmente lo conservado
+        # y el job falla al final para que GitHub avise por email.
+        run: python -m scraper.run || echo "RUN_FAILED=1" >> "$GITHUB_ENV"
+
+      - name: Filtro de matinées (build.py)
+        if: steps.when.outputs.skip == 'false'
+        run: python -m scraper.build
+
+      - name: Commit de los datos
+        if: steps.when.outputs.skip == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sessions.json docs/matinees.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Datos $(TZ=Europe/Madrid date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
+
+      - name: ¿Han fallado todas las fuentes?
+        if: steps.when.outputs.skip == 'false' && env.RUN_FAILED == '1'
+        run: |
+          echo "::error::Han fallado todas las fuentes. Revisa el log de 'Scraping (run.py)'."
+          exit 1
+
+  # Los commits hechos con GITHUB_TOKEN no disparan otros workflows: se despliega aquí mismo
+  deploy:
+    needs: scrape
+    if: always() && needs.scrape.outputs.skip == 'false'
+    uses: ./.github/workflows/pages.yml

@@ -1,0 +1,16 @@
+{
+  "name": "Matinées BCN",
+  "short_name": "Matinées",
+  "description": "Sesiones de cine antes de las 13:00, de lunes a viernes, en Barcelona.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f3ee",
+  "theme_color": "#b8430f",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

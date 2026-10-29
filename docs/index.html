@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matinées BCN</title>
+<meta name="description" content="Sesiones de cine antes de las 13:00, de lunes a viernes, en Barcelona.">
+<meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16140f" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f3ee;
+    --card: #ffffff;
+    --ink: #1d1b16;
+    --muted: #6b665c;
+    --line: #e4ded3;
+    --accent: #b8430f;
+    --accent-ink: #ffffff;
+    --tag: #efe9df;
+    --warn-bg: #fff3d6;
+    --warn-ink: #6b4a00;
+    --new-bg: #e3f1e6;
+    --new-ink: #1f5a2e;
+    --zumzeig: #c2410c;
+    --verdi: #1d4ed8;
+    --kinepolis: #7c3aed;
+    --other: #64748b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16140f;
+      --card: #211e18;
+      --ink: #f2eee6;
+      --muted: #a39d90;
+      --line: #35312a;
+      --accent: #f07a3f;
+      --accent-ink: #1b0d05;
+      --tag: #2e2a23;
+      --warn-bg: #3a2f12;
+      --warn-ink: #f5d68a;
+      --new-bg: #17321e;
+      --new-ink: #a6e3b4;
+      --zumzeig: #fb923c;
+      --verdi: #7aa2ff;
+      --kinepolis: #b794ff;
+      --other: #94a3b8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: 0 16px 32px; }
+  header.top { padding: 20px 0 8px; }
+  header.top h1 { margin: 0; font-size: 1.6rem; letter-spacing: -0.02em; }
+  header.top p { margin: 2px 0 0; color: var(--muted); font-size: .95rem; }
+
+  .notice {
+    margin: 12px 0 0; padding: 12px 14px; border-radius: 12px;
+    background: var(--new-bg); color: var(--new-ink); font-size: .95rem;
+  }
+  .notice strong { display: block; margin-bottom: 2px; }
+  .notice ul { margin: 4px 0 0; padding-left: 1.1rem; }
+  .notice a { color: inherit; font-weight: 600; }
+
+  section.day { margin-top: 24px; }
+  section.day > h2 {
+    position: sticky; top: 0; z-index: 1;
+    margin: 0 -16px 8px; padding: 10px 16px 8px;
+    background: var(--bg);
+    font-size: 1.05rem; font-weight: 700;
+    border-bottom: 1px solid var(--line);
+  }
+  section.day > h2 .rel { color: var(--accent); }
+  .empty { color: var(--muted); padding: 6px 2px; font-size: .95rem; }
+  .pending { color: var(--muted); font-size: .85rem; margin: 6px 2px 0; }
+  .empty .pending { margin: 0; }
+
+  ol.sessions { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  li.s {
+    display: grid; grid-template-columns: 4rem minmax(0, 1fr) auto; align-items: center; gap: 4px 12px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 12px 12px 12px 14px;
+  }
+  li.s .time { font-size: 1.35rem; font-weight: 750; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  li.s .info { min-width: 0; }
+  li.s .title { font-weight: 600; line-height: 1.25; overflow-wrap: anywhere; }
+  li.s .title a { color: inherit; text-decoration: none; }
+  li.s .meta { margin-top: 3px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; color: var(--muted); font-size: .85rem; }
+  .cinema { white-space: nowrap; }
+  .cinema::before {
+    content: ""; display: inline-block; width: .55rem; height: .55rem; border-radius: 50%;
+    margin-right: 5px; background: var(--dot, var(--other)); vertical-align: 0;
+  }
+  .tag {
+    display: inline-block; padding: 1px 7px; border-radius: 999px;
+    background: var(--tag); color: var(--ink); font-size: .78rem; font-weight: 600;
+  }
+  .special { color: var(--accent); font-size: .78rem; font-weight: 600; }
+  a.buy {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 44px; padding: 0 12px; border-radius: 12px;
+    background: var(--accent); color: var(--accent-ink);
+    font-weight: 700; font-size: .9rem; text-decoration: none; white-space: nowrap;
+  }
+  a.buy:active { transform: scale(.97); }
+  li.s.past { opacity: .45; }
+  li.s.past a.buy { background: var(--tag); color: var(--muted); }
+
+  footer { margin-top: 32px; color: var(--muted); font-size: .85rem; }
+  footer .warn {
+    display: block; margin-bottom: 8px; padding: 10px 12px; border-radius: 10px;
+    background: var(--warn-bg); color: var(--warn-ink);
+  }
+  footer p { margin: 4px 0; }
+  .loading { color: var(--muted); padding: 24px 0; }
+
+  @media (max-width: 360px) {
+    li.s { grid-template-columns: 3.6rem minmax(0, 1fr); }
+    li.s .time { font-size: 1.25rem; }
+    li.s a.buy { grid-column: 1 / -1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <h1>Matinées BCN</h1>
+    <p id="subtitle">Cine entre semana por la mañana</p>
+  </header>
+  <div id="alerts"></div>
+  <div id="days"><p class="loading">Cargando sesiones…</p></div>
+  <footer id="footer"></footer>
+</main>
+
+<script>
+(() => {
+  "use strict";
+
+  const TZ = "Europe/Madrid";
+  const WEEKDAYS = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+  const MONTHS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+  const DOT = { zumzeig: "--zumzeig", verdi: "--verdi", "kinepolis-splau": "--kinepolis" };
+  // En la web, "Doblada" se muestra como "Castellano" (también cubre películas españolas en VO)
+  const VERSION_LABEL = { "Doblada": "Castellano", "VOSE": "VOSE", "VOSE inglés": "VOSE inglés", "Català": "Català" };
+
+  let data = null;
+
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  /** Fecha (YYYY-MM-DD) y hora (HH:MM) actuales en Madrid, sea cual sea la zona del móvil. */
+  function madridNow() {
+    // ?now=2026-10-29T11:40 simula otra hora (solo para pruebas)
+    const fake = new URLSearchParams(location.search).get("now");
+    if (fake && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(fake)) return { date: fake.slice(0, 10), time: fake.slice(11) };
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+    }).formatToParts(new Date());
+    const p = Object.fromEntries(parts.map((x) => [x.type, x.value]));
+    return { date: `${p.year}-${p.month}-${p.day}`, time: `${p.hour}:${p.minute}` };
+  }
+
+  // Aritmética de fechas sobre días de calendario (UTC para no depender de la zona del móvil)
+  const toDate = (iso) => new Date(iso + "T00:00:00Z");
+  const toIso = (d) => d.toISOString().slice(0, 10);
+  const addDays = (iso, n) => { const d = toDate(iso); d.setUTCDate(d.getUTCDate() + n); return toIso(d); };
+  const diffDays = (a, b) => Math.round((toDate(b) - toDate(a)) / 86400000);
+  const weekday = (iso) => (toDate(iso).getUTCDay() + 6) % 7; // 0 = lunes, como en config.yaml
+  const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+  function dayLabel(iso, today) {
+    const d = toDate(iso);
+    const name = WEEKDAYS[d.getUTCDay()];
+    let text = `${name} ${d.getUTCDate()}`;
+    if (d.getUTCMonth() !== toDate(today).getUTCMonth()) text += ` ${MONTHS[d.getUTCMonth()]}`;
+    const diff = diffDays(today, iso);
+    if (diff === 0) return `<span class="rel">Hoy</span> · ${text}`;
+    if (diff === 1) return `<span class="rel">Mañana</span> · ${text}`;
+    return cap(text);
+  }
+
+  /** "hoy", "ayer", "el lunes 26" */
+  function relDay(iso, today) {
+    const diff = diffDays(iso, today);
+    if (diff === 0) return "hoy";
+    if (diff === 1) return "ayer";
+    const d = toDate(iso);
+    return `el ${WEEKDAYS[d.getUTCDay()]} ${d.getUTCDate()}`;
+  }
+
+  function versionTag(s) {
+    const label = VERSION_LABEL[s.version] || s.version_raw;
+    return label ? `<span class="tag" title="${esc(s.version_raw)}">${esc(label)}</span>` : "";
+  }
+
+  function sessionItem(s, past) {
+    const dot = DOT[s.cinema_id] ? ` style="--dot: var(${DOT[s.cinema_id]})"` : "";
+    const title = s.film_url
+      ? `<a href="${esc(s.film_url)}" target="_blank" rel="noopener">${esc(s.film_title)}</a>`
+      : esc(s.film_title);
+    const buy = s.ticket_url
+      ? `<a class="buy" href="${esc(s.ticket_url)}" target="_blank" rel="noopener">Entradas</a>`
+      : "";
+    return `<li class="s${past ? " past" : ""}">
+      <div class="time">${esc(s.time)}</div>
+      <div class="info">
+        <div class="title">${title}</div>
+        <div class="meta">
+          <span class="cinema"${dot}>${esc(s.cinema_name)}</span>
+          ${versionTag(s)}
+          ${s.special ? '<span class="special" title="Sesión especial: presentación, coloquio o evento">✦ Especial</span>' : ""}
+        </div>
+      </div>
+      ${buy}
+    </li>`;
+  }
+
+  function render() {
+    if (!data) return;
+    const now = madridNow();
+    const today = now.date;
+    const filter = data.meta.filter || { weekdays: [0, 1, 2, 3, 4], horizon_days: 14, cutoff: "13:00" };
+    const sources = Object.values(data.meta.sources || {});
+
+    document.getElementById("subtitle").textContent =
+      `Cine de lunes a viernes antes de las ${filter.cutoff.replace(/^0/, "")}`;
+
+    const byDay = {};
+    for (const s of data.sessions) (byDay[s.date] ||= []).push(s);
+
+    let html = "";
+    for (let i = 0; i < filter.horizon_days; i++) {
+      const iso = addDays(today, i);
+      if (!filter.weekdays.includes(weekday(iso))) continue;
+      const list = (byDay[iso] || []).slice().sort((a, b) => a.time.localeCompare(b.time));
+      // Sesiones de hoy ya empezadas: atenuadas y al final
+      const upcoming = iso === today ? list.filter((s) => s.time > now.time) : list;
+      const started = iso === today ? list.filter((s) => s.time <= now.time) : [];
+      // Cines que aún no han publicado horarios para este día
+      const pending = sources.filter((src) => src.last_date && src.last_date < iso).map((src) => src.name);
+
+      html += `<section class="day"><h2>${dayLabel(iso, today)}</h2>`;
+      const note = pending.length ? `${esc(pending.join(", "))}: aún sin horarios para este día` : "";
+      if (list.length) {
+        html += `<ol class="sessions">${upcoming.map((s) => sessionItem(s, false)).join("")}${started.map((s) => sessionItem(s, true)).join("")}</ol>`;
+        if (note) html += `<p class="pending">${note}</p>`;
+      } else {
+        html += `<p class="empty">Sin matinées${note ? `<span class="pending"> · ${note}</span>` : ""}</p>`;
+      }
+      html += `</section>`;
+    }
+    document.getElementById("days").innerHTML = html || '<p class="empty">No hay días que mostrar.</p>';
+
+    renderFooter(today, sources);
+  }
+
+  function renderFooter(today, sources) {
+    let html = "";
+    for (const src of sources) {
+      if (src.status === "ok") continue;
+      if (src.stale && src.last_ok) {
+        const rel = relDay(src.last_ok.slice(0, 10), today);  // "hoy" | "ayer" | "el lunes 26"
+        const when = rel.startsWith("el ") ? "del " + rel.slice(3) : "de " + rel;
+        html += `<span class="warn">Los datos de ${esc(src.name)} son ${esc(when)}: no se han podido actualizar.</span>`;
+      } else {
+        html += `<span class="warn">No se han podido cargar los horarios de ${esc(src.name)}.</span>`;
+      }
+    }
+    const gen = data.meta.generated_at;
+    if (gen) {
+      html += `<p>Actualizado ${esc(relDay(gen.slice(0, 10), today))} a las ${esc(gen.slice(11, 16))}.</p>`;
+    }
+    html += `<p>Fuentes: ${sources.map((s) => esc(s.name)).join(" · ")}. Horarios sujetos a cambios: confirma en la web del cine.</p>`;
+    document.getElementById("footer").innerHTML = html;
+  }
+
+  function renderAlerts(alerts) {
+    const list = (alerts && alerts.cinemas) || [];
+    if (!list.length) return;
+    const items = list.map((c) => {
+      const ex = (c.examples || []).slice(0, 2)
+        .map((e) => `${esc(e.film_title)} (${esc(e.date.slice(8, 10))}/${esc(e.date.slice(5, 7))} ${esc(e.time)})`).join(", ");
+      return `<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)}</a>: ${c.count} matinée${c.count === 1 ? "" : "s"}${ex ? " · " + ex : ""}</li>`;
+    }).join("");
+    document.getElementById("alerts").innerHTML =
+      `<div class="notice"><strong>Nuevos cines con matinées entre semana</strong>Aún no están en la lista; puedes añadirlos en config.yaml.<ul>${items}</ul></div>`;
+  }
+
+  async function getJson(url) {
+    const r = await fetch(url, { cache: "no-cache" });
+    if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
+    return r.json();
+  }
+
+  getJson("matinees.json")
+    .then((d) => { data = d; render(); })
+    .catch((e) => {
+      document.getElementById("days").innerHTML =
+        `<p class="empty">No se han podido cargar las sesiones. Prueba a recargar.</p>`;
+      console.error(e);
+    });
+  getJson("alerts.json").then(renderAlerts).catch(() => {});
+
+  // Refresca el atenuado de las sesiones ya empezadas y el cambio de día
+  setInterval(render, 60 * 1000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) render(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+# Configuración de Matinées BCN
+
+timezone: Europe/Madrid
+
+# Filtro de matinée (se aplica en build.py, no en el scraping)
+matinee:
+  cutoff: "13:00"            # hora de corte inclusiva: entra una sesión que empiece a esta hora
+  weekdays: [0, 1, 2, 3, 4]  # 0 = lunes ... 6 = domingo
+  horizon_days: 14           # días vista desde hoy (incluido); cada fuente llega hasta donde tenga datos
+
+# Cines que se scrapean a diario.
+#   id:          clave estable (se usa en cinema_id)
+#   name:        nombre visible
+#   source:      módulo en scraper/sources/ (zumzeig | verdi | publicine)
+#   url:         página de cartelera que lee el módulo
+#   tickets_url: enlace genérico de entradas si la sesión no trae uno propio
+cinemas:
+  - id: zumzeig
+    name: Zumzeig
+    source: zumzeig
+    url: https://zumzeigcine.coop/es/cine/calendari/
+    tickets_url: https://zumzeigcine.coop/es/cine/sesiones/
+
+  - id: verdi
+    name: Cines Verdi
+    source: verdi
+    url: https://barcelona.cines-verdi.com/cartelera
+    tickets_url: https://barcelona.cines-verdi.com/cartelera
+
+  - id: kinepolis-splau
+    name: Kinépolis Splau
+    source: publicine
+    url: https://www.publicine.net/cartelera-cine/cornella-de-llobregat/kinepolis-barcelona-full-splau
+    tickets_url: https://kinepolis.es/?complex=PFULL
+
+# Cines vigilados semanalmente vía Publicine (watch.py). Solo avisa; no se scrapean a diario.
+# Se completa en la fase 8 con las URLs verificadas.
+watchlist: []
