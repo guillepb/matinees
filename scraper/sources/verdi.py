@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import logging
 import re
+import time
 import unicodedata
 from datetime import date, datetime
 from urllib.parse import urljoin
@@ -117,6 +118,11 @@ def fetch(cinema: dict, http: Http | None = None, today: date | None = None) -> 
     sessions: list[Session] = []
     errors = 0
     urls = parse_listing(listing.content)
+    if not urls:  # visto una vez desde GitHub Actions, de forma puntual: un segundo intento
+        log.warning("Verdi: cartelera sin películas, reintentando en 10 s")
+        time.sleep(10)
+        listing = http.get(cinema["url"], params={"lang": "es"})
+        urls = parse_listing(listing.content)
     if not urls:
         soup = BeautifulSoup(listing.content, "lxml")
         title = soup.title.get_text(strip=True) if soup.title else ""
