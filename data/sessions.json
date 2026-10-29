@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-29T08:36:17+01:00",
+  "generated_at": "2026-10-29T12:04:41+01:00",
   "timezone": "Europe/Madrid",
   "sources": {
    "zumzeig": {
@@ -10,7 +10,7 @@
     "message": null,
     "count": 51,
     "stale": false,
-    "last_ok": "2026-10-29T08:36:17+01:00",
+    "last_ok": "2026-10-29T12:04:41+01:00",
     "last_date": "2026-12-03"
    },
    "verdi": {
@@ -20,7 +20,7 @@
     "message": null,
     "count": 310,
     "stale": false,
-    "last_ok": "2026-10-29T08:36:17+01:00",
+    "last_ok": "2026-10-29T12:04:41+01:00",
     "last_date": "2026-12-15"
    },
    "kinepolis-splau": {
@@ -30,12 +30,61 @@
     "message": null,
     "count": 405,
     "stale": false,
-    "last_ok": "2026-10-29T08:36:17+01:00",
+    "last_ok": "2026-10-29T12:04:41+01:00",
     "last_date": "2026-11-04"
+   },
+   "cinemes-girona": {
+    "name": "Cinemes Girona",
+    "source": "verdi",
+    "status": "ok",
+    "message": null,
+    "count": 109,
+    "stale": false,
+    "last_ok": "2026-10-29T12:04:41+01:00",
+    "last_date": "2027-02-23"
    }
   }
  },
  "sessions": [
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Baga",
+   "date": "2026-10-29",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40969&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/baga",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Desperada",
+   "date": "2026-10-29",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40935&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/desperada",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Greatest Performance",
+   "date": "2026-10-29",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40944&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/greatest-performance",
+   "special": false,
+   "source": "verdi"
+  },
   {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
@@ -74,6 +123,19 @@
    "film_url": "https://www.publicine.net/pelicula/16230/sentido-y-sensibilidad",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Ky Nam Inn",
+   "date": "2026-10-29",
+   "time": "11:30",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41036&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/ky-nam-inn",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -167,6 +229,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Wolfram",
+   "date": "2026-10-29",
+   "time": "12:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40950&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/wolfram",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Zero point action",
+   "date": "2026-10-29",
+   "time": "12:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40940&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/zero-point-action",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -217,6 +305,45 @@
    "film_url": "https://www.publicine.net/pelicula/16359/en-el-corazon-de-la-bestia",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Chaos of Violence",
+   "date": "2026-10-29",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41136&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/lonely",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Highway Deer",
+   "date": "2026-10-29",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40948&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/highway-deer",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Malika",
+   "date": "2026-10-29",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40945&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/malika",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -622,6 +749,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Shape of Momo",
+   "date": "2026-10-29",
+   "time": "17:45",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40941&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/shape-of-momo",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Under Current",
+   "date": "2026-10-29",
+   "time": "17:45",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40946&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/under-current",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "La bola negra",
@@ -644,6 +797,19 @@
    "version_raw": "V.O. SUB. CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221653/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "90 Meters",
+   "date": "2026-10-29",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40938&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/90-meters",
    "special": false,
    "source": "verdi"
   },
@@ -999,6 +1165,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Jet Lag in Summer",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40942&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/jet-lag-in-summer",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "My Name",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40947&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/my-name",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "La maleta",
@@ -1034,6 +1226,19 @@
    "version_raw": "CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221661/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Performing Kaoru's Funeral",
+   "date": "2026-10-29",
+   "time": "20:15",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40939&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/performing-kaoru-s-funeral",
    "special": false,
    "source": "verdi"
   },
@@ -1259,6 +1464,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Accordion Door",
+   "date": "2026-10-29",
+   "time": "21:45",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40943&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-accordion-door",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "El precio de la red",
@@ -1307,6 +1525,19 @@
    "version_raw": "V.O. SUB. CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221648/",
    "film_url": "https://barcelona.cines-verdi.com/la-odisea",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Body Blow",
+   "date": "2026-10-29",
+   "time": "22:10",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40957&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/body-blow",
    "special": false,
    "source": "verdi"
   },
@@ -1558,6 +1789,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Bhutan: The World’s Happiest Man",
+   "date": "2026-10-30",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40968&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-world-s-happiest-man",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Poultry farm",
+   "date": "2026-10-30",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40896&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-cry",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Doraemon. Aventuras en el mundo del arte",
@@ -1662,6 +1919,32 @@
    "source": "verdi"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Holy Days",
+   "date": "2026-10-30",
+   "time": "12:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40958&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/holy-days",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Unopened Letter",
+   "date": "2026-10-30",
+   "time": "12:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40897&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-unopened-letter",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -1686,6 +1969,32 @@
    "film_url": "https://www.publicine.net/pelicula/16347/la-bola-negra",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Silenced",
+   "date": "2026-10-30",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40995&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/silenced",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Deepest Space in Us",
+   "date": "2026-10-30",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40959&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-deepest-space-in-us",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2052,6 +2361,32 @@
    "source": "verdi"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "S",
+   "date": "2026-10-30",
+   "time": "17:50",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41054&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/s",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Someone Like Me",
+   "date": "2026-10-30",
+   "time": "17:50",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41055&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/someone-like-me",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "Arriba Tutto",
@@ -2312,6 +2647,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Sicko",
+   "date": "2026-10-30",
+   "time": "19:30",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40898&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/auru",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -2403,6 +2751,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "It's OK",
+   "date": "2026-10-30",
+   "time": "19:45",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40900&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/it-s-ok",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "La isla olvidada",
@@ -2464,6 +2825,19 @@
    "version_raw": "V.O. SUB. CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221737/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Hope",
+   "date": "2026-10-30",
+   "time": "20:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40964&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/hope",
    "special": false,
    "source": "verdi"
   },
@@ -2585,6 +2959,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Tiger",
+   "date": "2026-10-30",
+   "time": "21:30",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40955&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/tiger",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "La bola negra",
@@ -2661,6 +3048,19 @@
    "film_url": "https://www.publicine.net/pelicula/16229/leones-en-invierno",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Silenced Nights",
+   "date": "2026-10-30",
+   "time": "22:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40901&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/silenced-nights",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2884,6 +3284,32 @@
    "source": "verdi"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Levitating",
+   "date": "2026-10-31",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40905&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/para-perasuk",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Promised Spaces",
+   "date": "2026-10-31",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40911&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/promised-spaces",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Doraemon. Aventuras en el mundo del arte",
@@ -3040,6 +3466,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Edjop",
+   "date": "2026-10-31",
+   "time": "12:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40967&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/edjop",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -3064,6 +3503,19 @@
    "film_url": "https://www.publicine.net/pelicula/16347/la-bola-negra",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Boong",
+   "date": "2026-10-31",
+   "time": "12:15",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40906&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/boong",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3129,6 +3581,32 @@
    "film_url": "https://www.publicine.net/pelicula/16280/doraemon-aventures-al-mon-de-lart-cat",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Ah Girl",
+   "date": "2026-10-31",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40996&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/ah-girl",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Kurak",
+   "date": "2026-10-31",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40907&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/kurak",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3404,6 +3882,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "We're Nothing at All",
+   "date": "2026-10-31",
+   "time": "17:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40916&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/we-re-nothing-at-all",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Coyote vs Acme",
@@ -3504,6 +3995,32 @@
    "version_raw": "CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221769/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Yakushima's Illusion",
+   "date": "2026-10-31",
+   "time": "17:45",
+   "version": "VOSE",
+   "version_raw": "VOSE (Francés)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40908&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/yakushima-s-illusion",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "My Daughter's Hair",
+   "date": "2026-10-31",
+   "time": "17:50",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40913&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/my-daughter-s-hair",
    "special": false,
    "source": "verdi"
   },
@@ -3859,6 +4376,45 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Brand New Landscape",
+   "date": "2026-10-31",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40909&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/brand-new-landscape",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Hope",
+   "date": "2026-10-31",
+   "time": "20:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40965&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/hope",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Moonglow",
+   "date": "2026-10-31",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40914&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/moonglow",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "El ser querido",
@@ -4132,6 +4688,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Deadline",
+   "date": "2026-10-31",
+   "time": "22:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40910&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/deadline",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Masayume",
+   "date": "2026-10-31",
+   "time": "22:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40915&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/masayume",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "La invitación",
@@ -4327,6 +4909,32 @@
    "source": "verdi"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Old Man",
+   "date": "2026-11-01",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40917&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-old-man",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Uraal",
+   "date": "2026-11-01",
+   "time": "10:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40920&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/uraal",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Doraemon. Aventuras en el mundo del arte",
@@ -4470,6 +5078,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Let's have a cup of doodh patti chai",
+   "date": "2026-11-01",
+   "time": "12:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40921&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/let-s-have-a-cup-of-doodh-patti-chai",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Rangga & Cinta",
+   "date": "2026-11-01",
+   "time": "12:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40918&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/rangga-cinta",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -4572,6 +5206,45 @@
    "film_url": "https://www.publicine.net/pelicula/16280/doraemon-aventures-al-mon-de-lart-cat",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "LArirang",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40997&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/larirang",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Released",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40922&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/released",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "We Are All Strangers",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41037&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/we-are-all-strangers",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4990,6 +5663,32 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Hope",
+   "date": "2026-11-01",
+   "time": "18:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40966&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/hope",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Not a Hero",
+   "date": "2026-11-01",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40923&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/not-a-hero",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "Arriba Tutto",
@@ -5131,6 +5830,19 @@
    "film_url": "https://www.publicine.net/pelicula/16328/arriba-tutto",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Journey There",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40919&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/journey-there",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5313,6 +6025,19 @@
    "film_url": "https://www.publicine.net/pelicula/16254/street-fighter",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Human Resource",
+   "date": "2026-11-01",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40956&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/human-resource",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "verdi",
@@ -6186,6 +6911,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Esta soledad",
+   "date": "2026-11-02",
+   "time": "17:30",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41101&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/esta-soledad",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Beast",
+   "date": "2026-11-02",
+   "time": "17:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41099&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-beast",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "La bola negra",
@@ -6418,6 +7169,32 @@
    "film_url": "https://www.publicine.net/pelicula/16385/resident-evil",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Hope",
+   "date": "2026-11-02",
+   "time": "19:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41100&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/hope",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La bola negra",
+   "date": "2026-11-02",
+   "time": "19:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41102&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-bola-negra",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -7265,6 +8042,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Esta soledad",
+   "date": "2026-11-03",
+   "time": "17:00",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41107&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/esta-soledad",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La bola negra",
+   "date": "2026-11-03",
+   "time": "17:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41108&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-bola-negra",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "La bola negra",
@@ -7525,6 +8328,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Hope",
+   "date": "2026-11-03",
+   "time": "19:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41104&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/hope",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "La invitación",
@@ -7549,6 +8365,19 @@
    "film_url": "https://www.publicine.net/pelicula/16254/street-fighter",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Beast",
+   "date": "2026-11-03",
+   "time": "20:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41106&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-beast",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -8032,6 +8861,32 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Esta soledad",
+   "date": "2026-11-04",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41133&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/esta-soledad",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Beast",
+   "date": "2026-11-04",
+   "time": "16:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41134&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-beast",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Sentido y sensibilidad",
@@ -8201,6 +9056,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Construir espacio público",
+   "date": "2026-11-04",
+   "time": "16:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41126&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/construir-espacio-publico",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -8314,6 +9182,45 @@
    "version_raw": "CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221901/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Esta soledad",
+   "date": "2026-11-04",
+   "time": "18:00",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41113&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/esta-soledad",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Habitar/deshabitar",
+   "date": "2026-11-04",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "VOSC",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41124&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/habitar-deshabitar",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Beast",
+   "date": "2026-11-04",
+   "time": "18:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41131&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-beast",
    "special": false,
    "source": "verdi"
   },
@@ -8513,6 +9420,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Más que una casa",
+   "date": "2026-11-04",
+   "time": "19:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41125&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/mas-que-una-casa",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "La invitación",
@@ -8537,6 +9457,32 @@
    "film_url": "https://www.publicine.net/pelicula/16254/street-fighter",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Hope",
+   "date": "2026-11-04",
+   "time": "20:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41127&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/hope",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La bola negra",
+   "date": "2026-11-04",
+   "time": "20:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41112&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-bola-negra",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -8942,6 +9888,32 @@
    "source": "verdi"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Esta soledad",
+   "date": "2026-11-05",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41121&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/esta-soledad",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Beast",
+   "date": "2026-11-05",
+   "time": "16:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41118&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-beast",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "Arriba Tutto",
@@ -9059,6 +10031,19 @@
    "source": "verdi"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Hope",
+   "date": "2026-11-05",
+   "time": "17:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41119&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/hope",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "La bola negra",
@@ -9068,6 +10053,32 @@
    "version_raw": "CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221938/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "A les ciutats",
+   "date": "2026-11-05",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "VOSC",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41046&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/a-les-ciutats",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Esta soledad",
+   "date": "2026-11-05",
+   "time": "18:00",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41122&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/esta-soledad",
    "special": false,
    "source": "verdi"
   },
@@ -9187,6 +10198,32 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/sem-terra-lluita-terra-brasil/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Hope",
+   "date": "2026-11-05",
+   "time": "20:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41123&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/hope",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La bola negra",
+   "date": "2026-11-05",
+   "time": "20:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41120&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-bola-negra",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "verdi",
@@ -9371,6 +10408,19 @@
    "source": "verdi"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Comme un château fort (Like a fortress)",
+   "date": "2026-11-06",
+   "time": "18:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40979&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/comme-un-chateau-fort",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
    "film_title": "Ruega por nosotras",
@@ -9384,6 +10434,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La Ricarda. Melodía de una casa.",
+   "date": "2026-11-06",
+   "time": "19:40",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40980&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-ricarda-melodia-de-una-casa",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
    "film_title": "10mo Aniversario de la Cooperativa: El año del descubrimiento",
@@ -9395,6 +10458,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/10mo-aniversario-de-la-cooperativa-el-ano-del-descubrimiento/",
    "special": false,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Copan",
+   "date": "2026-11-06",
+   "time": "21:45",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40978&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/copan",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "verdi",
@@ -9436,6 +10512,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Barbara Buser - Swiss Pioneer of Sustainability",
+   "date": "2026-11-07",
+   "time": "17:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40981&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/barbara-buser-pionierin-der-nachhaltigkeit",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
    "film_title": "Krakatoa",
@@ -9447,6 +10536,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/krakatoa/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Stardust: A Story of Love and Architecture",
+   "date": "2026-11-07",
+   "time": "19:45",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40982&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/stardust-a-story-of-love-and-architecture",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "zumzeig",
@@ -9473,6 +10575,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/ruega-por-nosotras/",
    "special": false,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Lions by the River Tigris",
+   "date": "2026-11-07",
+   "time": "21:45",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40983&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-lions-by-the-river-tigris",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "verdi",
@@ -9553,6 +10668,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Royal Opera: Carmen (2026-27)",
+   "date": "2026-11-10",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40512&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-royal-opera-carmen-2026-27",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
    "film_title": "Ruega por nosotras",
@@ -9564,6 +10692,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/ruega-por-nosotras/",
    "special": false,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Romeo y Julieta. Ballet Ópera de París 26/27",
+   "date": "2026-11-12",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40513&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/romeo-y-julieta-ballet-opera-de-paris-26-27",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "zumzeig",
@@ -9631,6 +10772,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Coexistence, My Ass!",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "version": "VOSE inglés",
+   "version_raw": "VOSE (Inglés)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41110&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/coexistence-my-ass",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
    "film_title": "The Sky Trembles and the Earth Is Afraid and the Two Eyes Are Not Brothers",
@@ -9683,6 +10837,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "No sea tu falta",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41128&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/no-sea-tu-falta",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "Diversión Navideña con Peppa: La Experiencia en Cines",
@@ -9722,6 +10889,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Lyd",
+   "date": "2026-11-15",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Otras Lenguas)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41130&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/lyd",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
    "film_title": "Benigno",
@@ -9733,6 +10913,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/benigno/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Romeo y Julieta. Ballet Ópera de París 26/27",
+   "date": "2026-11-16",
+   "time": "19:15",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40514&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/romeo-y-julieta-ballet-opera-de-paris-26-27",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "zumzeig",
@@ -9772,6 +10965,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/la-salamandre/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Pavarotti 90 El Gran Tributo",
+   "date": "2026-11-19",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40515&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/pavarotti-90-el-gran-tributo",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "zumzeig",
@@ -9904,6 +11110,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Pavarotti 90 El Gran Tributo",
+   "date": "2026-11-23",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40516&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/pavarotti-90-el-gran-tributo",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
    "film_title": "Downriver a Tiger",
@@ -9915,6 +11134,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/downriver-a-tiger-sesion/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Los Cangrejos",
+   "date": "2026-11-27",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Castellano)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41056&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/los-cangrejos",
+   "special": false,
+   "source": "verdi"
   },
   {
    "cinema_id": "zumzeig",
@@ -9930,6 +11162,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Los Cangrejos",
+   "date": "2026-11-28",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE (Castellano)",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41057&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/los-cangrejos",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "Sessió Teta: Wild Horse Nine",
@@ -9939,6 +11184,19 @@
    "version_raw": "V.O. SUB. CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221706/",
    "film_url": "https://barcelona.cines-verdi.com/sessio-teta-wild-horse-nine",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "El cascanueces (ROH)",
+   "date": "2026-12-01",
+   "time": "20:15",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40517&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/el-cascanueces-roh",
    "special": false,
    "source": "verdi"
   },
@@ -9969,6 +11227,19 @@
    "source": "verdi"
   },
   {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "El lago de los cisnes. Ballet Ópera de París 26/27",
+   "date": "2026-12-14",
+   "time": "19:15",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40518&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/el-lago-de-los-cisnes-ballet-opera-de-paris-26-27",
+   "special": false,
+   "source": "verdi"
+  },
+  {
    "cinema_id": "verdi",
    "cinema_name": "Cines Verdi",
    "film_title": "Dune: Parte Tres",
@@ -9991,6 +11262,162 @@
    "version_raw": "V.O. SUB. CASTELLANO",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/220047/",
    "film_url": "https://barcelona.cines-verdi.com/dune-parte-tres",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Christmas in Versailles. Sonya Yoncheva",
+   "date": "2026-12-17",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40520&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/christmas-in-versailles-sonya-yoncheva",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Christmas in Versailles. Sonya Yoncheva",
+   "date": "2026-12-21",
+   "time": "20:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40521&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/christmas-in-versailles-sonya-yoncheva",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "El lago de los cisnes. Ballet Ópera de París 26/27",
+   "date": "2026-12-23",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40519&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/el-lago-de-los-cisnes-ballet-opera-de-paris-26-27",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Concierto de Fin de Año de la Filarmónica de Berlín 2026",
+   "date": "2026-12-31",
+   "time": "17:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40522&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/concierto-de-fin-de-ano-de-la-filarmonica-de-berlin-2026",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Le Corsaire (Ballet de la Opera Nacional de Burdeos)",
+   "date": "2027-01-07",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40598&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/le-corsaire-ballet-de-la-opera-nacional-de-burdeos",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Le Corsaire (Ballet de la Opera Nacional de Burdeos)",
+   "date": "2027-01-11",
+   "time": "19:15",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40599&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/le-corsaire-ballet-de-la-opera-nacional-de-burdeos",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La verbena de la Paloma (Palau de les Arts)",
+   "date": "2027-01-21",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40600&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-verbena-de-la-paloma-palau-de-les-arts",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La verbena de la Paloma (Palau de les Arts)",
+   "date": "2027-01-25",
+   "time": "19:15",
+   "version": "Doblada",
+   "version_raw": "CASTELLÀ",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40601&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-verbena-de-la-paloma-palau-de-les-arts",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La Bayadère. Ballet Ópera de París 26/27",
+   "date": "2027-02-01",
+   "time": "19:15",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40723&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-bayadere-ballet-opera-de-paris-26-27",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Royal Opera: El Ocaso de los Dioses (2026-27)",
+   "date": "2027-02-03",
+   "time": "17:45",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40725&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-royal-opera-el-ocaso-de-los-dioses-2026-27",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La Bayadère. Ballet Ópera de París 26/27",
+   "date": "2027-02-04",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40724&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-bayadere-ballet-opera-de-paris-26-27",
+   "special": false,
+   "source": "verdi"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Royal Opera: Cosí fan tutte (2026-27)",
+   "date": "2027-02-23",
+   "time": "19:45",
+   "version": "VOSE",
+   "version_raw": "VOSE",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40726&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-royal-opera-cosi-fan-tutte-2026-27",
    "special": false,
    "source": "verdi"
   }
