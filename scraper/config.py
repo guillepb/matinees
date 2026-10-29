@@ -19,7 +19,6 @@ def load_config(path: Path = CONFIG_PATH) -> dict:
     cfg["matinee"].setdefault("weekdays", [0, 1, 2, 3, 4])
     cfg["matinee"].setdefault("horizon_days", 14)
     cfg.setdefault("cinemas", [])
-    cfg.setdefault("watchlist", [])
     return cfg
 
 

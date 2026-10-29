@@ -1,7 +1,7 @@
 name: Publicar web
 
 # Publica docs/ en GitHub Pages. Se ejecuta al cambiar docs/ en main, a mano,
-# y al final del scraping diario y de la vigilancia semanal (workflow_call).
+# y al final del scraping diario (workflow_call).
 on:
   push:
     branches: [main]

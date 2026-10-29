@@ -33,6 +33,3 @@ cinemas:
     url: https://www.publicine.net/cartelera-cine/cornella-de-llobregat/kinepolis-barcelona-full-splau
     tickets_url: https://kinepolis.es/?complex=PFULL
 
-# Cines vigilados semanalmente vía Publicine (watch.py). Solo avisa; no se scrapean a diario.
-# Se completa en la fase 8 con las URLs verificadas.
-watchlist: []

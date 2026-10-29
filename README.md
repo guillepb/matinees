@@ -18,9 +18,8 @@ Cines seguidos a diario:
 scraper/sources/*.py   un módulo por fuente: fetch(cinema) -> list[Session]
 scraper/run.py         scraping de todas las fuentes  -> data/sessions.json (todo, sin filtrar)
 scraper/build.py       filtro de matinées              -> docs/matinees.json
-scraper/watch.py       vigilancia semanal de Publicine -> docs/alerts.json
-docs/index.html        la web: lee matinees.json y alerts.json, sin build ni dependencias
-config.yaml            cines, hora de corte, días, horizonte y lista de vigilancia
+docs/index.html        la web: lee matinees.json, sin build ni dependencias
+config.yaml            cines, hora de corte, días y horizonte
 ```
 
 - Si una fuente falla (o devuelve 0 sesiones), las demás se publican igual y se conservan sus sesiones de la ejecución anterior marcadas como `stale`; la web lo avisa en el pie.
@@ -58,7 +57,7 @@ cinemas:
     tickets_url: https://www.cinesa.es/  # por si una sesión no trae enlace propio
 ```
 
-y quitarlo de `watchlist` si estaba ahí. El aviso semanal de la web (ver abajo) indica qué cines de Publicine han empezado a programar matinées.
+Para encontrar su URL, busca el cine en [publicine.net](https://www.publicine.net/) y copia la de su cartelera.
 
 **Si no está en Publicine**, hay que escribir un módulo nuevo en `scraper/sources/<nombre>.py` con una función `fetch(cinema, http=None, today=None) -> list[Session]` (ver `verdi.py` como ejemplo), guardar un HTML de muestra en `tests/fixtures/` con sus tests, y usar `source: <nombre>` en `config.yaml`.
 
@@ -69,8 +68,7 @@ Opcional: para darle un color propio en la web, añade su `id` a `DOT` en `docs/
 | Workflow | Cuándo | Qué hace |
 | --- | --- | --- |
 | `daily.yml` | Cada día a las 06:17 (Madrid) y a mano | `run.py` + `build.py`, commit de los JSON y publica la web. Falla (y GitHub avisa por email) si fallan todas las fuentes o si `build.py` revienta |
-| `weekly-watch.yml` | Lunes por la mañana y a mano | `watch.py`, commit de `docs/alerts.json` y publica la web |
-| `pages.yml` | Al cambiar `docs/` en `main`, a mano, y llamado por los dos anteriores | Publica `docs/` en GitHub Pages |
+| `pages.yml` | Al cambiar `docs/` en `main`, a mano, y llamado por el anterior | Publica `docs/` en GitHub Pages |
 | `tests.yml` | En cada push y PR | `pytest` |
 
 El cron de GitHub va en UTC: `daily.yml` programa las 04:17 y las 05:17 UTC y solo ejecuta la que corresponde a las 06:17 en Madrid según el horario de verano o invierno. GitHub puede retrasar las ejecuciones programadas unos minutos.
