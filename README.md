@@ -68,11 +68,11 @@ Opcional: para darle un color propio en la web, añade su `id` a `DOT` en `docs/
 
 | Workflow | Cuándo | Qué hace |
 | --- | --- | --- |
-| `daily.yml` | Cada día a las 06:17 (Madrid) y a mano | `run.py` + `build.py`, commit de los JSON y publica la web. Falla (y GitHub avisa por email) si fallan todas las fuentes o si `build.py` revienta |
+| `daily.yml` | Cada día a las 02:17 (Madrid) y a mano | `run.py` + `build.py`, commit de los JSON y publica la web. Falla (y GitHub avisa por email) si fallan todas las fuentes o si `build.py` revienta |
 | `pages.yml` | Al cambiar `docs/` en `main`, a mano, y llamado por el anterior | Publica `docs/` en GitHub Pages |
 | `tests.yml` | En cada push y PR | `pytest` |
 
-El cron de GitHub va en UTC: `daily.yml` programa las 04:17 y las 05:17 UTC y solo ejecuta la que corresponde a las 06:17 en Madrid según el horario de verano o invierno. GitHub puede retrasar las ejecuciones programadas unos minutos.
+El cron de GitHub va en UTC: `daily.yml` programa las 00:17 y las 01:17 UTC y solo ejecuta la que corresponde a las 02:17 en Madrid según el horario de verano o invierno. GitHub puede retrasar las ejecuciones programadas varias horas (se ha visto un retraso de unas 6 horas), por eso se lanza de madrugada. El domingo del cambio a horario de verano las 02:17 no existen y ese día no se ejecuta.
 
 ### Activar GitHub Pages
 
