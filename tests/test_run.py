@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 import pytest
@@ -101,7 +101,9 @@ def test_build_filters_and_keeps_meta():
 def test_main_exit_code(monkeypatch, tmp_path, fails):
     import scraper.run as run
 
-    fetchers = {"src_a": ok(_s("a")), "src_b": ok(_s("b"))}
+    # main() usa la fecha real: las sesiones deben ser siempre futuras
+    future = (datetime.now(MADRID) + timedelta(days=7)).date().isoformat()
+    fetchers = {"src_a": ok(_s("a", date=future)), "src_b": ok(_s("b", date=future))}
     for f in fails:
         fetchers[f] = boom
     monkeypatch.setattr(run, "load_config", lambda: CFG)
