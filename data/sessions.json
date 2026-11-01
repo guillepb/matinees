@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-11-01T08:38:15+01:00",
+  "generated_at": "2026-11-01T12:04:37+01:00",
   "timezone": "Europe/Madrid",
   "sources": {
    "zumzeig": {
@@ -10,18 +10,28 @@
     "message": null,
     "count": 63,
     "stale": false,
-    "last_ok": "2026-11-01T08:38:15+01:00",
+    "last_ok": "2026-11-01T12:04:37+01:00",
     "last_date": "2026-12-09"
    },
-   "verdi": {
-    "name": "Cines Verdi",
-    "source": "verdi",
-    "status": "error",
-    "message": "RuntimeError: cartelera sin películas (HTTP 202, 188 bytes, url=https://barcelona.cines-verdi.com/cartelera?lang=es, título='', texto='')",
-    "count": 202,
-    "stale": true,
-    "last_ok": "2026-10-30T17:13:25+01:00",
-    "last_date": "2026-12-15"
+   "verdi-barcelona": {
+    "name": "Verdi Barcelona",
+    "source": "filmagenda",
+    "status": "ok",
+    "message": null,
+    "count": 98,
+    "stale": false,
+    "last_ok": "2026-11-01T12:04:37+01:00",
+    "last_date": "2026-11-29"
+   },
+   "verdi-park": {
+    "name": "Verdi Park",
+    "source": "filmagenda",
+    "status": "ok",
+    "message": null,
+    "count": 96,
+    "stale": false,
+    "last_ok": "2026-11-01T12:04:37+01:00",
+    "last_date": "2026-11-21"
    },
    "kinepolis-splau": {
     "name": "Kinépolis Splau",
@@ -30,48 +40,42 @@
     "message": null,
     "count": 354,
     "stale": false,
-    "last_ok": "2026-11-01T08:38:15+01:00",
+    "last_ok": "2026-11-01T12:04:37+01:00",
     "last_date": "2026-11-05"
    },
    "cinemes-girona": {
     "name": "Cinemes Girona",
-    "source": "verdi",
-    "status": "error",
-    "message": "RuntimeError: cartelera sin películas (HTTP 202, 188 bytes, url=https://www.cinemesgirona.cat/cartelera?lang=es, título='', texto='')",
-    "count": 62,
-    "stale": true,
-    "last_ok": "2026-10-30T17:13:25+01:00",
-    "last_date": "2027-02-04"
+    "source": "filmagenda",
+    "status": "ok",
+    "message": null,
+    "count": 55,
+    "stale": false,
+    "last_ok": "2026-11-01T12:04:37+01:00",
+    "last_date": "2026-12-01"
+   },
+   "cinema-malda": {
+    "name": "Cinema Maldà",
+    "source": "filmagenda",
+    "status": "ok",
+    "message": null,
+    "count": 18,
+    "stale": false,
+    "last_ok": "2026-11-01T12:04:37+01:00",
+    "last_date": "2026-11-05"
+   },
+   "caixaforum": {
+    "name": "CaixaForum",
+    "source": "filmagenda",
+    "status": "ok",
+    "message": null,
+    "count": 25,
+    "stale": false,
+    "last_ok": "2026-11-01T12:04:37+01:00",
+    "last_date": "2026-12-01"
    }
   }
  },
  "sessions": [
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "The Old Man",
-   "date": "2026-11-01",
-   "time": "10:00",
-   "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40917&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/the-old-man",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "Uraal",
-   "date": "2026-11-01",
-   "time": "10:00",
-   "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40920&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/uraal",
-   "special": false,
-   "source": "verdi"
-  },
   {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
@@ -203,71 +207,6 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La bola negra",
-   "date": "2026-11-01",
-   "time": "11:30",
-   "version": "Doblada",
-   "version_raw": "CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221960/",
-   "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La oveja Shaun: Misión calabaza",
-   "date": "2026-11-01",
-   "time": "11:30",
-   "version": "Desconocida",
-   "version_raw": "SENSE DIÀLEGS",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221961/",
-   "film_url": "https://barcelona.cines-verdi.com/la-oveja-shaun-mision-calabaza",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La vida és Verdi",
-   "date": "2026-11-01",
-   "time": "11:30",
-   "version": "Desconocida",
-   "version_raw": "VARIOS",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221962/",
-   "film_url": "https://barcelona.cines-verdi.com/la-vida-es-verdi",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Otello - Festival de Salzburg",
-   "date": "2026-11-01",
-   "time": "11:30",
-   "version": "Desconocida",
-   "version_raw": "OPERA",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221958/",
-   "film_url": "https://barcelona.cines-verdi.com/otello-festival-de-salzburg",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Tiempos de ilusión",
-   "date": "2026-11-01",
-   "time": "11:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221959/",
-   "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
-   "special": false,
-   "source": "verdi"
-  },
-  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Sentido y sensibilidad",
@@ -286,12 +225,12 @@
    "film_title": "Let's have a cup of doodh patti chai",
    "date": "2026-11-01",
    "time": "12:00",
-   "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40921&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/let-s-have-a-cup-of-doodh-patti-chai",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -300,11 +239,11 @@
    "date": "2026-11-01",
    "time": "12:00",
    "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40918&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/rangga-cinta",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -424,17 +363,43 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "¡Salta!",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "Desconocida",
+   "version_raw": "VO",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/-salta-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/-salta-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "La voz quebrada",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/la-voz-quebrada/",
+   "film_url": "https://www.cinemamalda.com/la-voz-quebrada/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
    "film_title": "LArirang",
    "date": "2026-11-01",
    "time": "16:00",
    "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40997&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/larirang",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -442,12 +407,12 @@
    "film_title": "Released",
    "date": "2026-11-01",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40922&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/released",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -456,11 +421,11 @@
    "date": "2026-11-01",
    "time": "16:00",
    "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41037&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/we-are-all-strangers",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -593,121 +558,121 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-01",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221782/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-01",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221791/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-01",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221778/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La invitación",
-   "date": "2026-11-01",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221796/",
-   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Moscas",
-   "date": "2026-11-01",
-   "time": "16:00",
-   "version": "Doblada",
-   "version_raw": "ESPAÑOL",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221803/",
-   "film_url": "https://barcelona.cines-verdi.com/moscas",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Naza",
-   "date": "2026-11-01",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221799/",
-   "film_url": "https://barcelona.cines-verdi.com/naza",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Sentido y sensibilidad",
-   "date": "2026-11-01",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221806/",
-   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-01",
    "time": "16:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221787/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "La invitación",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221796/",
+   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Moscas",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221803/",
+   "film_url": "https://barcelona.cines-verdi.com/moscas",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Naza",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221799/",
+   "film_url": "https://barcelona.cines-verdi.com/naza",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Sentido y sensibilidad",
+   "date": "2026-11-01",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221806/",
+   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La oveja Shaun: Misión calabaza",
    "date": "2026-11-01",
    "time": "16:10",
    "version": "Desconocida",
-   "version_raw": "SENSE DIÀLEGS",
+   "version_raw": "",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221946/",
    "film_url": "https://barcelona.cines-verdi.com/la-oveja-shaun-mision-calabaza",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -944,6 +909,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "La bola negra",
+   "date": "2026-11-01",
+   "time": "17:30",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/la-bola-negra/",
+   "film_url": "https://www.cinemamalda.com/la-bola-negra/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -957,17 +935,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-01",
    "time": "17:40",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221802/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -988,12 +966,12 @@
    "film_title": "Hope",
    "date": "2026-11-01",
    "time": "18:00",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40966&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -1002,11 +980,11 @@
    "date": "2026-11-01",
    "time": "18:00",
    "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40923&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/not-a-hero",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1022,69 +1000,69 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-01",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221781/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "El precio de la red",
-   "date": "2026-11-01",
-   "time": "18:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221795/",
-   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-01",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221785/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "El precio de la red",
+   "date": "2026-11-01",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221795/",
+   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-01",
    "time": "18:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221804/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La oveja Shaun: Misión calabaza",
    "date": "2026-11-01",
    "time": "18:10",
    "version": "Desconocida",
-   "version_raw": "SENSE DIÀLEGS",
+   "version_raw": "",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221947/",
    "film_url": "https://barcelona.cines-verdi.com/la-oveja-shaun-mision-calabaza",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1139,30 +1117,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-01",
    "time": "18:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221788/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-01",
    "time": "18:25",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221807/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1236,11 +1214,11 @@
    "date": "2026-11-01",
    "time": "19:00",
    "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40919&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/journey-there",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1308,17 +1286,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-01",
    "time": "19:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221779/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1470,37 +1448,37 @@
    "date": "2026-11-01",
    "time": "20:00",
    "version": "VOSE",
-   "version_raw": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40956&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/human-resource",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-01",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221783/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-01",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221792/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1516,17 +1494,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-01",
    "time": "20:10",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221797/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Cronos",
+   "date": "2026-11-01",
+   "time": "20:15",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/cronos/",
+   "film_url": "https://www.cinemamalda.com/cronos/",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1581,69 +1572,69 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Hope",
    "date": "2026-11-01",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221777/",
    "film_url": "https://barcelona.cines-verdi.com/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-01",
    "time": "20:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221805/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-01",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221808/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-01",
    "time": "20:35",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221789/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Naza",
    "date": "2026-11-01",
    "time": "20:40",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221800/",
    "film_url": "https://barcelona.cines-verdi.com/naza",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1893,43 +1884,43 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-01",
    "time": "22:00",
-   "version": "VOSE inglés",
-   "version_raw": "V.O. SUB. INGLÉS",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221780/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La Odisea",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "La odisea",
    "date": "2026-11-01",
    "time": "22:05",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221793/",
    "film_url": "https://barcelona.cines-verdi.com/la-odisea",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Un amor posible",
    "date": "2026-11-01",
    "time": "22:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221801/",
    "film_url": "https://barcelona.cines-verdi.com/un-amor-posible",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -1997,43 +1988,43 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Digger",
-   "date": "2026-11-01",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221809/",
-   "film_url": "https://barcelona.cines-verdi.com/digger",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Resident Evil",
-   "date": "2026-11-01",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221798/",
-   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-01",
    "time": "22:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221784/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Digger",
+   "date": "2026-11-01",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221809/",
+   "film_url": "https://barcelona.cines-verdi.com/digger",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Resident Evil",
+   "date": "2026-11-01",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221798/",
+   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2049,17 +2040,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Verity. La sombra de un engaño",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Verity: la sombra de un engaño",
    "date": "2026-11-01",
    "time": "22:45",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221790/",
    "film_url": "https://barcelona.cines-verdi.com/verity-la-sombra-de-un-engano",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2153,56 +2144,56 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Arriba Tutto",
    "date": "2026-11-02",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221964/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-02",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221965/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-02",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221966/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-02",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221967/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2242,6 +2233,32 @@
    "film_url": "https://www.publicine.net/pelicula/16184/wicker",
    "special": false,
    "source": "publicine"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "La voz quebrada",
+   "date": "2026-11-02",
+   "time": "14:00",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/la-voz-quebrada/",
+   "film_url": "https://www.cinemamalda.com/la-voz-quebrada/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "La bola negra",
+   "date": "2026-11-02",
+   "time": "15:30",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/la-bola-negra/",
+   "film_url": "https://www.cinemamalda.com/la-bola-negra/",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2309,121 +2326,121 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-02",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221817/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Ceniza en la boca",
    "date": "2026-11-02",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221821/",
    "film_url": "https://barcelona.cines-verdi.com/ceniza-en-la-boca",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-02",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221824/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-02",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221810/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La invitación",
-   "date": "2026-11-02",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221828/",
-   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Moscas",
-   "date": "2026-11-02",
-   "time": "16:00",
-   "version": "Doblada",
-   "version_raw": "ESPAÑOL",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221834/",
-   "film_url": "https://barcelona.cines-verdi.com/moscas",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Naza",
-   "date": "2026-11-02",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221831/",
-   "film_url": "https://barcelona.cines-verdi.com/naza",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Sentido y sensibilidad",
-   "date": "2026-11-02",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221840/",
-   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-02",
    "time": "16:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221814/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "La invitación",
+   "date": "2026-11-02",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221828/",
+   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Moscas",
+   "date": "2026-11-02",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221834/",
+   "film_url": "https://barcelona.cines-verdi.com/moscas",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Naza",
+   "date": "2026-11-02",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221831/",
+   "film_url": "https://barcelona.cines-verdi.com/naza",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Sentido y sensibilidad",
+   "date": "2026-11-02",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221840/",
+   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2653,11 +2670,11 @@
    "date": "2026-11-02",
    "time": "17:30",
    "version": "Doblada",
-   "version_raw": "CASTELLÀ",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41101&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -2670,20 +2687,20 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41099&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/the-beast",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-02",
    "time": "17:40",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221813/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2712,56 +2729,56 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-02",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221818/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "El precio de la red",
-   "date": "2026-11-02",
-   "time": "18:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221829/",
-   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-02",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221822/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "El precio de la red",
+   "date": "2026-11-02",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221829/",
+   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-02",
    "time": "18:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221835/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2777,17 +2794,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Mis queridísimos padres",
    "date": "2026-11-02",
    "time": "18:10",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221826/",
    "film_url": "https://barcelona.cines-verdi.com/mis-queridisimos-padres",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2803,30 +2820,43 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-02",
    "time": "18:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221815/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Cronos",
+   "date": "2026-11-02",
+   "time": "18:20",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/cronos/",
+   "film_url": "https://www.cinemamalda.com/cronos/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-02",
    "time": "18:25",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221841/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2933,17 +2963,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-02",
    "time": "19:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221811/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -2977,12 +3007,12 @@
    "film_title": "Hope",
    "date": "2026-11-02",
    "time": "19:30",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41100&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -2995,7 +3025,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41102&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3089,30 +3119,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-02",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221819/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-02",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221825/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3141,17 +3171,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-02",
    "time": "20:10",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221839/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Con Hasan en Gaza",
+   "date": "2026-11-02",
+   "time": "20:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://www.cinemamalda.com/cartelera-dia-dia/",
+   "film_url": "https://www.cinemamalda.com/cartelera-dia-dia/",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3180,69 +3223,69 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Hope",
    "date": "2026-11-02",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221823/",
    "film_url": "https://barcelona.cines-verdi.com/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-02",
    "time": "20:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221837/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-02",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221836/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-02",
    "time": "20:35",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221838/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Naza",
    "date": "2026-11-02",
    "time": "20:40",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221832/",
    "film_url": "https://barcelona.cines-verdi.com/naza",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3427,30 +3470,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-02",
    "time": "22:00",
-   "version": "VOSE inglés",
-   "version_raw": "V.O. SUB. INGLÉS",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221980/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La Odisea",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "La odisea",
    "date": "2026-11-02",
    "time": "22:05",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221827/",
    "film_url": "https://barcelona.cines-verdi.com/la-odisea",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3466,17 +3509,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Un amor posible",
    "date": "2026-11-02",
    "time": "22:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221833/",
    "film_url": "https://barcelona.cines-verdi.com/un-amor-posible",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3531,43 +3574,43 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Digger",
-   "date": "2026-11-02",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221842/",
-   "film_url": "https://barcelona.cines-verdi.com/digger",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Resident Evil",
-   "date": "2026-11-02",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221830/",
-   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-02",
    "time": "22:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221820/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Digger",
+   "date": "2026-11-02",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221842/",
+   "film_url": "https://barcelona.cines-verdi.com/digger",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Resident Evil",
+   "date": "2026-11-02",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221830/",
+   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3583,17 +3626,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Verity. La sombra de un engaño",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Verity: la sombra de un engaño",
    "date": "2026-11-02",
    "time": "22:45",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221816/",
    "film_url": "https://barcelona.cines-verdi.com/verity-la-sombra-de-un-engano",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3661,56 +3704,56 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Arriba Tutto",
    "date": "2026-11-03",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221969/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-03",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221971/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-03",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221970/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-03",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221968/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -3791,121 +3834,134 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-03",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221846/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Ceniza en la boca",
    "date": "2026-11-03",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221850/",
    "film_url": "https://barcelona.cines-verdi.com/ceniza-en-la-boca",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-03",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221857/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-03",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221843/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La invitación",
-   "date": "2026-11-03",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221861/",
-   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Moscas",
-   "date": "2026-11-03",
-   "time": "16:00",
-   "version": "Doblada",
-   "version_raw": "ESPAÑOL",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221869/",
-   "film_url": "https://barcelona.cines-verdi.com/moscas",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Naza",
-   "date": "2026-11-03",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221866/",
-   "film_url": "https://barcelona.cines-verdi.com/naza",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Sentido y sensibilidad",
-   "date": "2026-11-03",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221873/",
-   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-03",
    "time": "16:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221853/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "La invitación",
+   "date": "2026-11-03",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221861/",
+   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Moscas",
+   "date": "2026-11-03",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221869/",
+   "film_url": "https://barcelona.cines-verdi.com/moscas",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Naza",
+   "date": "2026-11-03",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221866/",
+   "film_url": "https://barcelona.cines-verdi.com/naza",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Sentido y sensibilidad",
+   "date": "2026-11-03",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221873/",
+   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "La voz quebrada",
+   "date": "2026-11-03",
+   "time": "16:15",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/la-voz-quebrada/",
+   "film_url": "https://www.cinemamalda.com/la-voz-quebrada/",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4040,6 +4096,19 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
+   "film_title": "Esta soledad",
+   "date": "2026-11-03",
+   "time": "17:00",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41107&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/esta-soledad",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
    "film_title": "La bola negra",
    "date": "2026-11-03",
    "time": "17:00",
@@ -4048,7 +4117,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41108&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -4061,7 +4130,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41137&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/the-beast",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4129,17 +4198,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-03",
    "time": "17:40",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221865/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "La bola negra",
+   "date": "2026-11-03",
+   "time": "17:45",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/la-bola-negra/",
+   "film_url": "https://www.cinemamalda.com/la-bola-negra/",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4155,56 +4237,56 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-03",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221847/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "El precio de la red",
-   "date": "2026-11-03",
-   "time": "18:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221862/",
-   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-03",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221851/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "El precio de la red",
+   "date": "2026-11-03",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221862/",
+   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-03",
    "time": "18:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221870/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -4220,43 +4302,56 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Mis queridísimos padres",
    "date": "2026-11-03",
    "time": "18:10",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221859/",
    "film_url": "https://barcelona.cines-verdi.com/mis-queridisimos-padres",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-03",
    "time": "18:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221854/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-03",
    "time": "18:25",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221874/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "La Ricarda. Melodía de una casa",
+   "date": "2026-11-03",
+   "time": "18:30",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40970&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/la-ricarda-melodia-de-una-casa",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4350,17 +4445,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-03",
    "time": "19:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221844/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4420,12 +4515,12 @@
    "film_title": "Hope",
    "date": "2026-11-03",
    "time": "19:30",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41104&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4460,11 +4555,24 @@
    "date": "2026-11-03",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLÀ",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41138&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "The Beast",
+   "date": "2026-11-03",
+   "time": "20:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41106&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-beast",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4493,43 +4601,56 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-03",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221848/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-03",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221858/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-03",
    "time": "20:10",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221864/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Cronos",
+   "date": "2026-11-03",
+   "time": "20:15",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/cronos/",
+   "film_url": "https://www.cinemamalda.com/cronos/",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4545,69 +4666,69 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Hope",
    "date": "2026-11-03",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221852/",
    "film_url": "https://barcelona.cines-verdi.com/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-03",
    "time": "20:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221871/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-03",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221872/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-03",
    "time": "20:35",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221856/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Naza",
    "date": "2026-11-03",
    "time": "20:40",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221867/",
    "film_url": "https://barcelona.cines-verdi.com/naza",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4792,30 +4913,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-03",
    "time": "22:00",
-   "version": "VOSE inglés",
-   "version_raw": "V.O. SUB. INGLÉS",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221981/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La Odisea",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "La odisea",
    "date": "2026-11-03",
    "time": "22:05",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221860/",
    "film_url": "https://barcelona.cines-verdi.com/la-odisea",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4831,17 +4952,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Un amor posible",
    "date": "2026-11-03",
    "time": "22:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221868/",
    "film_url": "https://barcelona.cines-verdi.com/un-amor-posible",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -4883,56 +5004,56 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Digger",
-   "date": "2026-11-03",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221875/",
-   "film_url": "https://barcelona.cines-verdi.com/digger",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Resident Evil",
-   "date": "2026-11-03",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221863/",
-   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-03",
    "time": "22:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221849/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Verity. La sombra de un engaño",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Digger",
+   "date": "2026-11-03",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221875/",
+   "film_url": "https://barcelona.cines-verdi.com/digger",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Resident Evil",
+   "date": "2026-11-03",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221863/",
+   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Verity: la sombra de un engaño",
    "date": "2026-11-03",
    "time": "22:45",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221855/",
    "film_url": "https://barcelona.cines-verdi.com/verity-la-sombra-de-un-engano",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5000,56 +5121,56 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-04",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221974/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Perugino. El Renacimiento eterno",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Perugino: El renacimiento eterno",
    "date": "2026-11-04",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221976/",
    "film_url": "https://barcelona.cines-verdi.com/perugino-el-renacimiento-eterno",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-04",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221975/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-04",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221973/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -5091,17 +5212,43 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Chopin",
+   "date": "2026-11-04",
+   "time": "13:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/chopin/",
+   "film_url": "https://www.cinemamalda.com/chopin/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Cronos",
+   "date": "2026-11-04",
+   "time": "15:30",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/cronos/",
+   "film_url": "https://www.cinemamalda.com/cronos/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
    "film_title": "Esta soledad",
    "date": "2026-11-04",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLÀ",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41133&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -5114,7 +5261,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41134&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/the-beast",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5156,121 +5303,121 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-04",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221878/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Ceniza en la boca",
    "date": "2026-11-04",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221882/",
    "film_url": "https://barcelona.cines-verdi.com/ceniza-en-la-boca",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-04",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221890/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-04",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221887/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La invitación",
-   "date": "2026-11-04",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221894/",
-   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Moscas",
-   "date": "2026-11-04",
-   "time": "16:00",
-   "version": "Doblada",
-   "version_raw": "ESPAÑOL",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221904/",
-   "film_url": "https://barcelona.cines-verdi.com/moscas",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Naza",
-   "date": "2026-11-04",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221900/",
-   "film_url": "https://barcelona.cines-verdi.com/naza",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Sentido y sensibilidad",
-   "date": "2026-11-04",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221907/",
-   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-04",
    "time": "16:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221884/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "La invitación",
+   "date": "2026-11-04",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221894/",
+   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Moscas",
+   "date": "2026-11-04",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221904/",
+   "film_url": "https://barcelona.cines-verdi.com/moscas",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Naza",
+   "date": "2026-11-04",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221900/",
+   "film_url": "https://barcelona.cines-verdi.com/naza",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Sentido y sensibilidad",
+   "date": "2026-11-04",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221907/",
+   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5334,8 +5481,8 @@
    "version_raw": "",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41126&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/construir-espacio-publico",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5455,6 +5602,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "La invitación",
+   "date": "2026-11-04",
+   "time": "17:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/la-invitacion/",
+   "film_url": "https://www.cinemamalda.com/la-invitacion/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Hope",
@@ -5481,17 +5641,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-04",
    "time": "17:40",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221901/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -5500,11 +5660,11 @@
    "date": "2026-11-04",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLÀ",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41113&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -5512,12 +5672,12 @@
    "film_title": "Habitar/deshabitar",
    "date": "2026-11-04",
    "time": "18:00",
-   "version": "VOSE",
-   "version_raw": "VOSC",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41124&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/habitar-deshabitar",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -5530,7 +5690,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41131&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/the-beast",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5546,95 +5706,95 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-04",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221880/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "El precio de la red",
-   "date": "2026-11-04",
-   "time": "18:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221897/",
-   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-04",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221888/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "El precio de la red",
+   "date": "2026-11-04",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221897/",
+   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-04",
    "time": "18:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221905/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Perugino. El Renacimiento eterno",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Perugino: El renacimiento eterno",
    "date": "2026-11-04",
    "time": "18:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221972/",
    "film_url": "https://barcelona.cines-verdi.com/perugino-el-renacimiento-eterno",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-04",
    "time": "18:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221885/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-04",
    "time": "18:25",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221895/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5702,6 +5862,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "El silencio de la Tierra",
+   "date": "2026-11-04",
+   "time": "19:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/inauguracion-de-la-33-edicion-del-suncine-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/inauguracion-de-la-33-edicion-del-suncine-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -5741,17 +5914,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-04",
    "time": "19:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221876/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -5765,6 +5938,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/naza/",
    "special": false,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Un amor posible",
+   "date": "2026-11-04",
+   "time": "19:15",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/possible-love/",
+   "film_url": "https://www.cinemamalda.com/possible-love/",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5803,7 +5989,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41125&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/mas-que-una-casa",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5837,12 +6023,12 @@
    "film_title": "Hope",
    "date": "2026-11-04",
    "time": "20:00",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41127&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -5855,7 +6041,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41112&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5884,30 +6070,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-04",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221879/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-04",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221891/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -5923,82 +6109,82 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-04",
    "time": "20:10",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221898/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Hope",
    "date": "2026-11-04",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221883/",
    "film_url": "https://barcelona.cines-verdi.com/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-04",
    "time": "20:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221906/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-04",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221896/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-04",
    "time": "20:35",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221886/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Naza",
    "date": "2026-11-04",
    "time": "20:40",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221903/",
    "film_url": "https://barcelona.cines-verdi.com/naza",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -6170,43 +6356,43 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-04",
    "time": "22:00",
-   "version": "VOSE inglés",
-   "version_raw": "V.O. SUB. INGLÉS",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221877/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La Odisea",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "La odisea",
    "date": "2026-11-04",
    "time": "22:05",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221893/",
    "film_url": "https://barcelona.cines-verdi.com/la-odisea",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Un amor posible",
    "date": "2026-11-04",
    "time": "22:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221902/",
    "film_url": "https://barcelona.cines-verdi.com/un-amor-posible",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -6261,56 +6447,56 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Digger",
-   "date": "2026-11-04",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221908/",
-   "film_url": "https://barcelona.cines-verdi.com/digger",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Resident Evil",
-   "date": "2026-11-04",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221899/",
-   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-04",
    "time": "22:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221881/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Verity. La sombra de un engaño",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Digger",
+   "date": "2026-11-04",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221908/",
+   "film_url": "https://barcelona.cines-verdi.com/digger",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Resident Evil",
+   "date": "2026-11-04",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221899/",
+   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Verity: la sombra de un engaño",
    "date": "2026-11-04",
    "time": "22:45",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221889/",
    "film_url": "https://barcelona.cines-verdi.com/verity-la-sombra-de-un-engano",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -6391,43 +6577,43 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-05",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221978/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sanjuro",
    "date": "2026-11-05",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221977/",
    "film_url": "https://barcelona.cines-verdi.com/sanjuro",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-05",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221979/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -6443,6 +6629,19 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Vivir la tierra",
+   "date": "2026-11-05",
+   "time": "12:15",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/vivir-la-tierra/",
+   "film_url": "https://www.cinemamalda.com/vivir-la-tierra/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
    "cinema_id": "kinepolis-splau",
    "cinema_name": "Kinépolis Splau",
    "film_title": "Clayface",
@@ -6456,17 +6655,30 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "El samurái y el prisionero",
+   "date": "2026-11-05",
+   "time": "14:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/cartelera-dia-dia/",
+   "film_url": "https://www.cinemamalda.com/cartelera-dia-dia/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
    "film_title": "Esta soledad",
    "date": "2026-11-05",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLÀ",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41121&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -6479,7 +6691,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41118&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/the-beast",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -6508,121 +6720,121 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-05",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221916/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Ceniza en la boca",
    "date": "2026-11-05",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221922/",
    "film_url": "https://barcelona.cines-verdi.com/ceniza-en-la-boca",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-05",
    "time": "16:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221929/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-05",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221919/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La invitación",
-   "date": "2026-11-05",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221933/",
-   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Moscas",
-   "date": "2026-11-05",
-   "time": "16:00",
-   "version": "Doblada",
-   "version_raw": "ESPAÑOL",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221913/",
-   "film_url": "https://barcelona.cines-verdi.com/moscas",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Naza",
-   "date": "2026-11-05",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221937/",
-   "film_url": "https://barcelona.cines-verdi.com/naza",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Sentido y sensibilidad",
-   "date": "2026-11-05",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221912/",
-   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-05",
    "time": "16:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221925/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "La invitación",
+   "date": "2026-11-05",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221933/",
+   "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Moscas",
+   "date": "2026-11-05",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221913/",
+   "film_url": "https://barcelona.cines-verdi.com/moscas",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Naza",
+   "date": "2026-11-05",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221937/",
+   "film_url": "https://barcelona.cines-verdi.com/naza",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Sentido y sensibilidad",
+   "date": "2026-11-05",
+   "time": "16:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221912/",
+   "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -6781,17 +6993,30 @@
    "source": "publicine"
   },
   {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Kakeru (Sheep in the Box)",
+   "date": "2026-11-05",
+   "time": "17:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/cartelera-dia-dia/",
+   "film_url": "https://www.cinemamalda.com/cartelera-dia-dia/",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
    "film_title": "Hope",
    "date": "2026-11-05",
    "time": "17:00",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41119&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -6833,17 +7058,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-05",
    "time": "17:40",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221938/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -6851,12 +7076,12 @@
    "film_title": "A les ciutats",
    "date": "2026-11-05",
    "time": "18:00",
-   "version": "VOSE",
-   "version_raw": "VOSC",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41046&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/a-les-ciutats",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -6865,11 +7090,11 @@
    "date": "2026-11-05",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLÀ",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41122&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -6898,95 +7123,95 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Arriba Tutto",
    "date": "2026-11-05",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221917/",
    "film_url": "https://barcelona.cines-verdi.com/arriba-tutto",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "El precio de la red",
-   "date": "2026-11-05",
-   "time": "18:00",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221934/",
-   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "El ser querido",
    "date": "2026-11-05",
    "time": "18:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221923/",
    "film_url": "https://barcelona.cines-verdi.com/el-ser-querido",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "El precio de la red",
+   "date": "2026-11-05",
+   "time": "18:00",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221934/",
+   "film_url": "https://barcelona.cines-verdi.com/el-precio-de-la-red",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-05",
    "time": "18:00",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221914/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Mis queridísimos padres",
    "date": "2026-11-05",
    "time": "18:10",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221931/",
    "film_url": "https://barcelona.cines-verdi.com/mis-queridisimos-padres",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-05",
    "time": "18:15",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221926/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-05",
    "time": "18:25",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221911/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -7080,17 +7305,17 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-05",
    "time": "19:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221921/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7104,6 +7329,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/sem-terra-lluita-terra-brasil/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "cinema-malda",
+   "cinema_name": "Cinema Maldà",
+   "film_title": "Un amor posible",
+   "date": "2026-11-05",
+   "time": "19:05",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://www.cinemamalda.com/possible-love/",
+   "film_url": "https://www.cinemamalda.com/possible-love/",
+   "special": false,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -7186,15 +7424,28 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
+   "film_title": "The New Museum",
+   "date": "2026-11-05",
+   "time": "19:45",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40975&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/the-new-museum",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
    "film_title": "Hope",
    "date": "2026-11-05",
    "time": "20:00",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41123&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -7207,7 +7458,7 @@
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41120&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -7223,30 +7474,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Esta soledad",
    "date": "2026-11-05",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221930/",
    "film_url": "https://barcelona.cines-verdi.com/esta-soledad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Sentido y sensibilidad",
    "date": "2026-11-05",
    "time": "20:10",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221935/",
    "film_url": "https://barcelona.cines-verdi.com/sentido-y-sensibilidad",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -7275,69 +7526,69 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Hope",
    "date": "2026-11-05",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221924/",
    "film_url": "https://barcelona.cines-verdi.com/hope",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La bola negra",
    "date": "2026-11-05",
    "time": "20:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221915/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "La invitación",
    "date": "2026-11-05",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221910/",
    "film_url": "https://barcelona.cines-verdi.com/la-invitacion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Sanjuro",
-   "date": "2026-11-05",
-   "time": "20:35",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221949/",
-   "film_url": "https://barcelona.cines-verdi.com/sanjuro",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-05",
    "time": "20:35",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221927/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Sanjuro",
+   "date": "2026-11-05",
+   "time": "20:35",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221949/",
+   "film_url": "https://barcelona.cines-verdi.com/sanjuro",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -7522,30 +7773,30 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "La bola negra",
    "date": "2026-11-05",
    "time": "22:00",
-   "version": "VOSE inglés",
-   "version_raw": "V.O. SUB. INGLÉS",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221920/",
    "film_url": "https://barcelona.cines-verdi.com/la-bola-negra",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "La Odisea",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "La odisea",
    "date": "2026-11-05",
    "time": "22:05",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221932/",
    "film_url": "https://barcelona.cines-verdi.com/la-odisea",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "kinepolis-splau",
@@ -7587,69 +7838,69 @@
    "source": "publicine"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Digger",
-   "date": "2026-11-05",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221909/",
-   "film_url": "https://barcelona.cines-verdi.com/digger",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Resident Evil",
-   "date": "2026-11-05",
-   "time": "22:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221936/",
-   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Tiempos de ilusión",
    "date": "2026-11-05",
    "time": "22:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221918/",
    "film_url": "https://barcelona.cines-verdi.com/tiempos-de-ilusion",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Verity. La sombra de un engaño",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Digger",
+   "date": "2026-11-05",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221909/",
+   "film_url": "https://barcelona.cines-verdi.com/digger",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Resident Evil",
+   "date": "2026-11-05",
+   "time": "22:30",
+   "version": "VOSE",
+   "version_raw": "vose",
+   "ticket_url": "https://verdibcn.admit-one.eu/seats/221936/",
+   "film_url": "https://barcelona.cines-verdi.com/resident-evil",
+   "special": false,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Verity: la sombra de un engaño",
    "date": "2026-11-05",
    "time": "22:45",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221928/",
    "film_url": "https://barcelona.cines-verdi.com/verity-la-sombra-de-un-engano",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
-   "film_title": "Comme un château fort (Like a fortress)",
+   "film_title": "Comme un château fort",
    "date": "2026-11-06",
    "time": "18:00",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40979&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/comme-un-chateau-fort",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7667,15 +7918,28 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
-   "film_title": "La Ricarda. Melodía de una casa.",
+   "film_title": "La Ricarda. Melodía de una casa",
    "date": "2026-11-06",
    "time": "19:40",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40980&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/la-ricarda-melodia-de-una-casa",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "cinemes-girona",
+   "cinema_name": "Cinemes Girona",
+   "film_title": "Por qué no escribo nada",
+   "date": "2026-11-06",
+   "time": "20:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41140&language=ESP",
+   "film_url": "https://www.cinemesgirona.cat/por-que-no-escribo-nada",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7696,25 +7960,25 @@
    "film_title": "Copan",
    "date": "2026-11-06",
    "time": "21:45",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40978&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/copan",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "George Michael: The Faith Tour",
    "date": "2026-11-06",
    "time": "22:30",
-   "version": "Desconocida",
-   "version_raw": "CONCIERTO",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/220603/",
    "film_url": "https://barcelona.cines-verdi.com/george-michael-the-faith-tour",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7748,12 +8012,12 @@
    "film_title": "Barbara Buser - Swiss Pioneer of Sustainability",
    "date": "2026-11-07",
    "time": "17:30",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40981&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/barbara-buser-pionierin-der-nachhaltigkeit",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7775,11 +8039,11 @@
    "date": "2026-11-07",
    "time": "19:45",
    "version": "Desconocida",
-   "version_raw": "",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40982&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/stardust-a-story-of-love-and-architecture",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7813,25 +8077,38 @@
    "film_title": "The Lions by the River Tigris",
    "date": "2026-11-07",
    "time": "21:45",
-   "version": "Desconocida",
-   "version_raw": "",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40983&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/the-lions-by-the-river-tigris",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "George Michael: The Faith Tour",
    "date": "2026-11-07",
    "time": "22:30",
-   "version": "Desconocida",
-   "version_raw": "CONCIERTO",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/220604/",
    "film_url": "https://barcelona.cines-verdi.com/george-michael-the-faith-tour",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "¡Un viaje emocional con los Moomin!",
+   "date": "2026-11-08",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "dubbed",
+   "ticket_url": "https://ticket.caixaforum.org/es/barcelona/tickets/un-viatge-emocional-amb-els-moomin-730273?date=2026-11-08&time=16:00&idOrigen=A-CC-07273-0001-PF",
+   "film_url": "https://caixaforum.org/es/barcelona/p/-un-viaje-emocional-con-los-moomin-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7873,17 +8150,17 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "George Michael: The Faith Tour",
    "date": "2026-11-08",
    "time": "20:30",
-   "version": "Desconocida",
-   "version_raw": "CONCIERTO",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/220605/",
    "film_url": "https://barcelona.cines-verdi.com/george-michael-the-faith-tour",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7953,15 +8230,15 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
-   "film_title": "The Royal Opera: Carmen (2026-27)",
+   "film_title": "Carmen",
    "date": "2026-11-10",
    "time": "20:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40512&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/the-royal-opera-carmen-2026-27",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -7992,15 +8269,15 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
-   "film_title": "Romeo y Julieta. Ballet Ópera de París 26/27",
+   "film_title": "Romeo y Julieta",
    "date": "2026-11-12",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40513&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/romeo-y-julieta-ballet-opera-de-paris-26-27",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8029,17 +8306,17 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Mala bèstia",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Mala bestia",
    "date": "2026-11-12",
    "time": "20:15",
-   "version": "Català",
-   "version_raw": "CATALÁN",
+   "version": "Desconocida",
+   "version_raw": "",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/220848/",
    "film_url": "https://barcelona.cines-verdi.com/mala-bestia",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8086,25 +8363,25 @@
    "film_title": "Coexistence, My Ass!",
    "date": "2026-11-13",
    "time": "20:00",
-   "version": "VOSE inglés",
-   "version_raw": "VOSE (Inglés)",
+   "version": "VOSE",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41110&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/coexistence-my-ass",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "A New Dawn",
    "date": "2026-11-13",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221982/",
    "film_url": "https://barcelona.cines-verdi.com/a-new-dawn",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8120,30 +8397,30 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "A New Dawn",
    "date": "2026-11-14",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221983/",
    "film_url": "https://barcelona.cines-verdi.com/a-new-dawn",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Diversión Navideña con Peppa: La Experiencia en Cines",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Diversión navideña con Peppa: la experiencia en cines",
    "date": "2026-11-14",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "dubbed",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221153/",
    "film_url": "https://barcelona.cines-verdi.com/diversion-navidena-con-peppa-la-experiencia-en-cines",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8178,11 +8455,11 @@
    "date": "2026-11-14",
    "time": "20:00",
    "version": "Doblada",
-   "version_raw": "CASTELLÀ",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41128&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/no-sea-tu-falta",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8198,17 +8475,30 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Diversión Navideña con Peppa: La Experiencia en Cines",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Diversión navideña con Peppa: la experiencia en cines",
    "date": "2026-11-15",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "dubbed",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221154/",
    "film_url": "https://barcelona.cines-verdi.com/diversion-navidena-con-peppa-la-experiencia-en-cines",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Construyendo mi yo",
+   "date": "2026-11-15",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "dubbed",
+   "ticket_url": "https://ticket.caixaforum.org/es/barcelona/tickets/construint-el-meu-jo-730275?date=2026-11-15&time=16:00&idOrigen=A-CC-07274-0001-PF",
+   "film_url": "https://caixaforum.org/es/barcelona/p/construyendo-mi-yo-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8242,12 +8532,12 @@
    "film_title": "Lyd",
    "date": "2026-11-15",
    "time": "20:00",
-   "version": "VOSE",
-   "version_raw": "VOSE (Otras Lenguas)",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41130&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/lyd",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8263,17 +8553,17 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "A New Dawn",
    "date": "2026-11-15",
    "time": "22:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221984/",
    "film_url": "https://barcelona.cines-verdi.com/a-new-dawn",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8304,15 +8594,15 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
-   "film_title": "Romeo y Julieta. Ballet Ópera de París 26/27",
+   "film_title": "Romeo y Julieta",
    "date": "2026-11-16",
    "time": "19:15",
-   "version": "VOSE",
-   "version_raw": "VOSE",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40514&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/romeo-y-julieta-ballet-opera-de-paris-26-27",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8352,6 +8642,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/narcisa-hirsch-cine-experimental/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Minari. Historia de mi familia",
+   "date": "2026-11-18",
+   "time": "10:30",
+   "version": "Doblada",
+   "version_raw": "dubbed",
+   "ticket_url": "https://ticket.caixaforum.org/es/barcelona/tickets/minari-historia-de-mi-familia-682331?date=2026-11-18&time=10:30&idOrigen=A-CC-06742-0007-GM_1",
+   "film_url": "https://caixaforum.org/es/barcelona/p/-minari.-historia-de-mi-familia-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8421,15 +8724,15 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
-   "film_title": "Pavarotti 90 El Gran Tributo",
+   "film_title": "Pavarotti 90th",
    "date": "2026-11-19",
    "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40515&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/pavarotti-90-el-gran-tributo",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8458,17 +8761,17 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Sesión de Cortometrajes - Terror 2026",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
+   "film_title": "Sesión de cortometrajes: Terror 2026",
    "date": "2026-11-19",
    "time": "22:30",
    "version": "Desconocida",
-   "version_raw": "VARIOS",
+   "version_raw": "",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221948/",
-   "film_url": "https://barcelona.cines-verdi.com/sesion-cortometrajes-terror-2026",
-   "special": false,
-   "source": "verdi"
+   "film_url": "https://barcelona.cines-verdi.com/sessio-de-curtmetratges-terror-2026",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8484,43 +8787,56 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Cecilia, una luz de mañana",
    "date": "2026-11-20",
    "time": "22:30",
-   "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version": "Desconocida",
+   "version_raw": "",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221443/",
    "film_url": "https://barcelona.cines-verdi.com/cecilia-una-luz-de-manana",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Diversión Navideña con Peppa: La Experiencia en Cines",
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Balandrau, viento salvaje",
+   "date": "2026-11-21",
+   "time": "11:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/sesion-especial-sentir-el-cine-balandrau-viento-salvaje-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/sesion-especial-sentir-el-cine-balandrau-viento-salvaje-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Diversión navideña con Peppa: la experiencia en cines",
    "date": "2026-11-21",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "dubbed",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221155/",
    "film_url": "https://barcelona.cines-verdi.com/diversion-navidena-con-peppa-la-experiencia-en-cines",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-park",
+   "cinema_name": "Verdi Park",
    "film_title": "Viva",
    "date": "2026-11-21",
    "time": "12:00",
-   "version": "Desconocida",
-   "version_raw": "VARIOS",
+   "version": "Català",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221705/",
    "film_url": "https://barcelona.cines-verdi.com/viva",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8536,17 +8852,17 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Diversión Navideña con Peppa: La Experiencia en Cines",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Diversión navideña con Peppa: la experiencia en cines",
    "date": "2026-11-22",
    "time": "11:30",
    "version": "Doblada",
-   "version_raw": "CASTELLANO",
+   "version_raw": "dubbed",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221156/",
    "film_url": "https://barcelona.cines-verdi.com/diversion-navidena-con-peppa-la-experiencia-en-cines",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8560,6 +8876,19 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/rose/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Sección Oficial 1 - Animación",
+   "date": "2026-11-23",
+   "time": "18:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-1-animacion-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-1-animacion-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8577,15 +8906,80 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
-   "film_title": "Pavarotti 90 El Gran Tributo",
+   "film_title": "Pavarotti 90th",
    "date": "2026-11-23",
    "time": "20:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
+   "version": "Desconocida",
+   "version_raw": "VO",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40516&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/pavarotti-90-el-gran-tributo",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Stand Up",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/gala-de-inauguracion.-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/gala-de-inauguracion.-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Pour le meilleur",
+   "date": "2026-11-25",
+   "time": "17:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seleccion-oficial-2-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seleccion-oficial-2-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Joybubbles",
+   "date": "2026-11-25",
+   "time": "19:45",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seleccion-oficial-3-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seleccion-oficial-3-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Inclús Indústria – LA CRIP x INCLÚS",
+   "date": "2026-11-26",
+   "time": "10:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/inclus-industria-la-crip-x-inclus-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/inclus-industria-la-crip-x-inclus-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "D_THINK — Fuck Normality!",
+   "date": "2026-11-26",
+   "time": "18:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/d_think-fuck-normality-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/d_think-fuck-normality-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8601,17 +8995,56 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
    "film_title": "Con la muerte en los talones",
    "date": "2026-11-26",
    "time": "20:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLÀ",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221985/",
    "film_url": "https://barcelona.cines-verdi.com/con-la-muerte-en-los-talones",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Sección Oficial 4",
+   "date": "2026-11-27",
+   "time": "11:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-4-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-4-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Selecció Oficial 5 Curts Documentals",
+   "date": "2026-11-27",
+   "time": "17:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-6-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-6-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Sesión ON",
+   "date": "2026-11-27",
+   "time": "19:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/sesion-on-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/sesion-on-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "cinemes-girona",
@@ -8619,12 +9052,51 @@
    "film_title": "Los Cangrejos",
    "date": "2026-11-27",
    "time": "20:00",
-   "version": "VOSE",
-   "version_raw": "VOSE (Castellano)",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41056&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/los-cangrejos",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "El pintor y el escorpión",
+   "date": "2026-11-28",
+   "time": "11:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-5-dart-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-5-dart-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Corredora",
+   "date": "2026-11-28",
+   "time": "16:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-7-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-7-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Sección REL",
+   "date": "2026-11-28",
+   "time": "18:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-rel-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-rel-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8645,25 +9117,77 @@
    "film_title": "Los Cangrejos",
    "date": "2026-11-28",
    "time": "20:00",
-   "version": "VOSE",
-   "version_raw": "VOSE (Castellano)",
+   "version": "Doblada",
+   "version_raw": "vose",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=41057&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/los-cangrejos",
    "special": false,
-   "source": "verdi"
+   "source": "filmagenda"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Sessió Teta: Wild Horse Nine",
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Take Me Home",
+   "date": "2026-11-28",
+   "time": "20:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-8-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-8-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "verdi-barcelona",
+   "cinema_name": "Verdi Barcelona",
+   "film_title": "Wild Horse Nine",
    "date": "2026-11-29",
    "time": "11:30",
    "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
+   "version_raw": "vose",
    "ticket_url": "https://verdibcn.admit-one.eu/seats/221706/",
-   "film_url": "https://barcelona.cines-verdi.com/sessio-teta-wild-horse-nine",
-   "special": false,
-   "source": "verdi"
+   "film_url": "https://barcelona.cines-verdi.com/sesion-teta-wild-horse-nine",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Inclús familias. Selección de cortometrajes",
+   "date": "2026-11-29",
+   "time": "12:15",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/sesion-relajada-infantil-con-proyeccion-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/sesion-relajada-infantil-con-proyeccion-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Kirikú y la bruja",
+   "date": "2026-11-29",
+   "time": "16:00",
+   "version": "Doblada",
+   "version_raw": "dubbed",
+   "ticket_url": "https://ticket.caixaforum.org/es/barcelona/tickets/cinema-concert-kiriku-i-la-bruixa-730278?date=2026-11-29&time=16:00&idOrigen=A-CC-07277-0001-PF",
+   "film_url": "https://caixaforum.org/es/barcelona/p/cine-concierto-kiriku-y-la-bruja-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "The Way We Move",
+   "date": "2026-11-29",
+   "time": "17:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-9-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-9-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8677,6 +9201,45 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/los-cangrejos/",
    "special": true,
    "source": "zumzeig"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "The Son and the Sea",
+   "date": "2026-11-29",
+   "time": "20:30",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-10-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seccion-oficial-10-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Selección Oficial 12",
+   "date": "2026-12-01",
+   "time": "16:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seleccion-oficial-12-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seleccion-oficial-12-barcelona",
+   "special": true,
+   "source": "filmagenda"
+  },
+  {
+   "cinema_id": "caixaforum",
+   "cinema_name": "CaixaForum",
+   "film_title": "Indòmita llum",
+   "date": "2026-12-01",
+   "time": "19:00",
+   "version": "Desconocida",
+   "version_raw": "",
+   "ticket_url": "https://caixaforum.org/es/barcelona/p/seleccio-oficial-13-cloenda-barcelona",
+   "film_url": "https://caixaforum.org/es/barcelona/p/seleccio-oficial-13-cloenda-barcelona",
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8694,15 +9257,15 @@
   {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
-   "film_title": "El cascanueces (ROH)",
+   "film_title": "Royal Ballet & Opera 2026/27: The Nutcracker",
    "date": "2026-12-01",
    "time": "20:15",
    "version": "Desconocida",
    "version_raw": "",
    "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40517&language=ESP",
    "film_url": "https://www.cinemesgirona.cat/el-cascanueces-roh",
-   "special": false,
-   "source": "verdi"
+   "special": true,
+   "source": "filmagenda"
   },
   {
    "cinema_id": "zumzeig",
@@ -8718,19 +9281,6 @@
    "source": "zumzeig"
   },
   {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Kotodama, el camino del espejo",
-   "date": "2026-12-04",
-   "time": "20:15",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLÀ",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/221675/",
-   "film_url": "https://barcelona.cines-verdi.com/kotodama-el-camino-del-espejo",
-   "special": false,
-   "source": "verdi"
-  },
-  {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
    "film_title": "A tu lado",
@@ -8742,162 +9292,6 @@
    "film_url": "https://zumzeigcine.coop/es/cine/films/a-tu-lado/",
    "special": true,
    "source": "zumzeig"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "El lago de los cisnes. Ballet Ópera de París 26/27",
-   "date": "2026-12-14",
-   "time": "19:15",
-   "version": "VOSE",
-   "version_raw": "VOSE",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40518&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/el-lago-de-los-cisnes-ballet-opera-de-paris-26-27",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Dune: Parte Tres",
-   "date": "2026-12-15",
-   "time": "20:30",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/220008/",
-   "film_url": "https://barcelona.cines-verdi.com/dune-parte-tres",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "verdi",
-   "cinema_name": "Cines Verdi",
-   "film_title": "Dune: Parte Tres",
-   "date": "2026-12-15",
-   "time": "20:40",
-   "version": "VOSE",
-   "version_raw": "V.O. SUB. CASTELLANO",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/220047/",
-   "film_url": "https://barcelona.cines-verdi.com/dune-parte-tres",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "El lago de los cisnes. Ballet Ópera de París 26/27",
-   "date": "2026-12-23",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40519&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/el-lago-de-los-cisnes-ballet-opera-de-paris-26-27",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "Concierto de Fin de Año de la Filarmónica de Berlín 2026",
-   "date": "2026-12-31",
-   "time": "17:30",
-   "version": "Desconocida",
-   "version_raw": "",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40522&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/concierto-de-fin-de-ano-de-la-filarmonica-de-berlin-2026",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "Le Corsaire (Ballet de la Opera Nacional de Burdeos)",
-   "date": "2027-01-07",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40598&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/le-corsaire-ballet-de-la-opera-nacional-de-burdeos",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "Le Corsaire (Ballet de la Opera Nacional de Burdeos)",
-   "date": "2027-01-11",
-   "time": "19:15",
-   "version": "VOSE",
-   "version_raw": "VOSE",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40599&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/le-corsaire-ballet-de-la-opera-nacional-de-burdeos",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "La verbena de la Paloma (Palau de les Arts)",
-   "date": "2027-01-21",
-   "time": "16:00",
-   "version": "Doblada",
-   "version_raw": "CASTELLÀ",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40600&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/la-verbena-de-la-paloma-palau-de-les-arts",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "La verbena de la Paloma (Palau de les Arts)",
-   "date": "2027-01-25",
-   "time": "19:15",
-   "version": "Doblada",
-   "version_raw": "CASTELLÀ",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40601&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/la-verbena-de-la-paloma-palau-de-les-arts",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "La Bayadère. Ballet Ópera de París 26/27",
-   "date": "2027-02-01",
-   "time": "19:15",
-   "version": "VOSE",
-   "version_raw": "VOSE",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40723&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/la-bayadere-ballet-opera-de-paris-26-27",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "The Royal Opera: El Ocaso de los Dioses (2026-27)",
-   "date": "2027-02-03",
-   "time": "17:45",
-   "version": "VOSE",
-   "version_raw": "VOSE",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40725&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/the-royal-opera-el-ocaso-de-los-dioses-2026-27",
-   "special": false,
-   "source": "verdi"
-  },
-  {
-   "cinema_id": "cinemes-girona",
-   "cinema_name": "Cinemes Girona",
-   "film_title": "La Bayadère. Ballet Ópera de París 26/27",
-   "date": "2027-02-04",
-   "time": "16:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
-   "ticket_url": "https://girona.admit-one.eu/?p=tickets&perfCode=40724&language=ESP",
-   "film_url": "https://www.cinemesgirona.cat/la-bayadere-ballet-opera-de-paris-26-27",
-   "special": false,
-   "source": "verdi"
   }
  ]
 }
