@@ -28,6 +28,9 @@
     --zumzeig: #c2410c;
     --verdi: #1d4ed8;
     --kinepolis: #7c3aed;
+    --park: #0e7490;
+    --malda: #be185d;
+    --caixa: #a16207;
     --girona: #0f766e;
     --other: #64748b;
   }
@@ -48,6 +51,9 @@
       --zumzeig: #fb923c;
       --verdi: #7aa2ff;
       --kinepolis: #b794ff;
+      --park: #22d3ee;
+      --malda: #f472b6;
+      --caixa: #facc15;
       --girona: #5eead4;
       --other: #94a3b8;
     }
@@ -143,7 +149,10 @@
   const TZ = "Europe/Madrid";
   const WEEKDAYS = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
   const MONTHS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
-  const DOT = { zumzeig: "--zumzeig", verdi: "--verdi", "kinepolis-splau": "--kinepolis", "cinemes-girona": "--girona" };
+  const DOT = {
+    zumzeig: "--zumzeig", "verdi-barcelona": "--verdi", "verdi-park": "--park", "kinepolis-splau": "--kinepolis",
+    "cinemes-girona": "--girona", "cinema-malda": "--malda", caixaforum: "--caixa",
+  };
   // En la web, "Doblada" se muestra como "Castellano" (también cubre películas españolas en VO)
   const VERSION_LABEL = { "Doblada": "Castellano", "VOSE": "VOSE", "VOSE inglés": "VOSE inglés", "Català": "Català" };
 
@@ -275,7 +284,11 @@
     if (gen) {
       html += `<p>Actualizado ${esc(relDay(gen.slice(0, 10), today))} a las ${esc(gen.slice(11, 16))}.</p>`;
     }
-    html += `<p>Fuentes: ${sources.map((s) => esc(s.name)).join(" · ")}. Horarios sujetos a cambios: confirma en la web del cine.</p>`;
+    html += `<p>Cines: ${sources.map((s) => esc(s.name)).join(" · ")}. Horarios sujetos a cambios: confirma en la web del cine.</p>`;
+    const viaAgenda = sources.filter((s) => s.source === "filmagenda").map((s) => esc(s.name));
+    if (viaAgenda.length) {
+      html += `<p>Horarios de ${viaAgenda.join(", ")} vía <a href="https://www.filmagenda.es/barcelona" target="_blank" rel="noopener">FilmAgenda</a>.</p>`;
+    }
     document.getElementById("footer").innerHTML = html;
   }
 

@@ -9,9 +9,13 @@ Cines seguidos a diario:
 | Cine | Fuente | Enlace de compra |
 | --- | --- | --- |
 | Zumzeig | [calendario de zumzeigcine.coop](https://zumzeigcine.coop/es/cine/calendari/) + fichas | Por sesión (próximas 3); después, la película en codetickets |
-| Cines Verdi Barcelona | [cartelera](https://barcelona.cines-verdi.com/cartelera) + fichas | Por sesión |
+| Verdi Barcelona y Verdi Park | [FilmAgenda](https://www.filmagenda.es/cine/verdi-park) | Por sesión |
 | Kinépolis Full Splau | [Publicine](https://www.publicine.net/cartelera-cine/cornella-de-llobregat/kinepolis-barcelona-full-splau) | Por sesión |
-| Cinemes Girona | [cartelera](https://www.cinemesgirona.cat/cartelera) + fichas (misma plataforma que Verdi) | Por sesión |
+| Cinemes Girona | [FilmAgenda](https://www.filmagenda.es/cine/cinemes-girona) | Por sesión |
+| Cinema Maldà | [FilmAgenda](https://www.filmagenda.es/cine/cinema-malda) | Página de la película |
+| CaixaForum Barcelona | [FilmAgenda](https://www.filmagenda.es/cine/caixaforum-barcelona) | Por sesión si la hay; si no, página de la actividad |
+
+Verdi y Cinemes Girona se leen de FilmAgenda porque sus webs bloquean las peticiones desde GitHub Actions (HTTP 202 sin contenido). `scraper/sources/verdi.py` se conserva por si deja de ser así, pero ya no se usa.
 
 ## Cómo funciona
 
@@ -46,6 +50,8 @@ python3.12 -m venv .venv
 Para ver la web como si fuera otra hora (p. ej. con sesiones ya empezadas): `http://localhost:8000/?now=2026-10-29T11:40`.
 
 ## Añadir un cine
+
+**Si está en FilmAgenda** (cubre decenas de espacios de Barcelona), basta con una entrada con `source: filmagenda` y `url: https://www.filmagenda.es/cine/<slug>`.
 
 **Si está en Publicine** (la mayoría de cadenas: Cinesa, Yelmo, Ocine, Kinépolis…), basta con añadirlo a `config.yaml`:
 

@@ -11,7 +11,7 @@ matinee:
 # Cines que se scrapean a diario.
 #   id:          clave estable (se usa en cinema_id)
 #   name:        nombre visible
-#   source:      módulo en scraper/sources/ (zumzeig | verdi | publicine)
+#   source:      módulo en scraper/sources/ (zumzeig | publicine | filmagenda)
 #   url:         página de cartelera que lee el módulo
 #   tickets_url: enlace genérico de entradas si la sesión no trae uno propio
 cinemas:
@@ -21,10 +21,16 @@ cinemas:
     url: https://zumzeigcine.coop/es/cine/calendari/
     tickets_url: https://zumzeigcine.coop/es/cine/sesiones/
 
-  - id: verdi
-    name: Cines Verdi
-    source: verdi
-    url: https://barcelona.cines-verdi.com/cartelera
+  - id: verdi-barcelona
+    name: Verdi Barcelona
+    source: filmagenda
+    url: https://www.filmagenda.es/cine/verdi-barcelona
+    tickets_url: https://barcelona.cines-verdi.com/cartelera
+
+  - id: verdi-park
+    name: Verdi Park
+    source: filmagenda
+    url: https://www.filmagenda.es/cine/verdi-park
     tickets_url: https://barcelona.cines-verdi.com/cartelera
 
   - id: kinepolis-splau
@@ -35,7 +41,19 @@ cinemas:
 
   - id: cinemes-girona
     name: Cinemes Girona
-    source: verdi                  # misma plataforma web que Verdi
-    url: https://www.cinemesgirona.cat/cartelera
+    source: filmagenda
+    url: https://www.filmagenda.es/cine/cinemes-girona
     tickets_url: https://www.cinemesgirona.cat/cartelera
+
+  - id: cinema-malda
+    name: Cinema Maldà
+    source: filmagenda
+    url: https://www.filmagenda.es/cine/cinema-malda
+    tickets_url: https://www.cinemamalda.com/
+
+  - id: caixaforum
+    name: CaixaForum
+    source: filmagenda
+    url: https://www.filmagenda.es/cine/caixaforum-barcelona
+    tickets_url: https://caixaforum.org/es/barcelona
 
