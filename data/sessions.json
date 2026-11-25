@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-11-25T10:54:31+01:00",
+  "generated_at": "2026-11-25T15:29:42+01:00",
   "timezone": "Europe/Madrid",
   "sources": {
    "zumzeig": {
@@ -10,7 +10,7 @@
     "message": null,
     "count": 54,
     "stale": false,
-    "last_ok": "2026-11-25T10:54:31+01:00",
+    "last_ok": "2026-11-25T15:29:42+01:00",
     "last_date": "2026-12-25"
    },
    "verdi-barcelona": {
@@ -20,7 +20,7 @@
     "message": null,
     "count": 41,
     "stale": false,
-    "last_ok": "2026-11-25T10:54:31+01:00",
+    "last_ok": "2026-11-25T15:29:42+01:00",
     "last_date": "2026-12-17"
    },
    "verdi-park": {
@@ -28,9 +28,9 @@
     "source": "filmagenda",
     "status": "ok",
     "message": null,
-    "count": 40,
+    "count": 37,
     "stale": false,
-    "last_ok": "2026-11-25T10:54:31+01:00",
+    "last_ok": "2026-11-25T15:29:42+01:00",
     "last_date": "2026-12-18"
    },
    "kinepolis-splau": {
@@ -38,9 +38,9 @@
     "source": "publicine",
     "status": "ok",
     "message": null,
-    "count": 352,
+    "count": 343,
     "stale": false,
-    "last_ok": "2026-11-25T10:54:31+01:00",
+    "last_ok": "2026-11-25T15:29:42+01:00",
     "last_date": "2026-12-01"
    },
    "cinemes-girona": {
@@ -50,7 +50,7 @@
     "message": null,
     "count": 31,
     "stale": false,
-    "last_ok": "2026-11-25T10:54:31+01:00",
+    "last_ok": "2026-11-25T15:29:42+01:00",
     "last_date": "2026-12-23"
    },
    "cinema-malda": {
@@ -70,181 +70,12 @@
     "message": null,
     "count": 21,
     "stale": false,
-    "last_ok": "2026-11-25T10:54:31+01:00",
+    "last_ok": "2026-11-25T15:29:42+01:00",
     "last_date": "2026-12-22"
    }
   }
  },
  "sessions": [
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "Los juegos del hambre. Amanecer en la cosecha",
-   "date": "2026-11-25",
-   "time": "11:00",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259702/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16076/los-juegos-del-hambre-amanecer-en-la-cosecha",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "Ruega por nosotras",
-   "date": "2026-11-25",
-   "time": "11:00",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259700/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16134/ruega-por-nosotras",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "En el corazón de la bestia",
-   "date": "2026-11-25",
-   "time": "11:15",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259706/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16359/en-el-corazon-de-la-bestia",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "Wild Horse Nine",
-   "date": "2026-11-25",
-   "time": "11:15",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259933/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16117/wild-horse-nine",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "Cómo robar un banco",
-   "date": "2026-11-25",
-   "time": "11:30",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259704/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/15182/como-robar-un-banco",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "La bola negra",
-   "date": "2026-11-25",
-   "time": "11:30",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259698/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16347/la-bola-negra",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "verdi-park",
-   "cinema_name": "Verdi Park",
-   "film_title": "Canaletto y el arte de Venecia",
-   "date": "2026-11-25",
-   "time": "11:30",
-   "version": "VOSE",
-   "version_raw": "vose",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/222829/",
-   "film_url": "https://barcelona.cines-verdi.com/canaletto-y-el-arte-de-venecia",
-   "special": false,
-   "source": "filmagenda"
-  },
-  {
-   "cinema_id": "verdi-park",
-   "cinema_name": "Verdi Park",
-   "film_title": "El mal padre",
-   "date": "2026-11-25",
-   "time": "11:30",
-   "version": "Doblada",
-   "version_raw": "vose",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/222828/",
-   "film_url": "https://barcelona.cines-verdi.com/el-mal-padre",
-   "special": false,
-   "source": "filmagenda"
-  },
-  {
-   "cinema_id": "verdi-park",
-   "cinema_name": "Verdi Park",
-   "film_title": "Wild Horse Nine",
-   "date": "2026-11-25",
-   "time": "11:30",
-   "version": "VOSE",
-   "version_raw": "vose",
-   "ticket_url": "https://verdibcn.admit-one.eu/seats/222830/",
-   "film_url": "https://barcelona.cines-verdi.com/wild-horse-nine",
-   "special": false,
-   "source": "filmagenda"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "El gato con sombrero",
-   "date": "2026-11-25",
-   "time": "11:45",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259701/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16163/el-gato-con-sombrero",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "El director",
-   "date": "2026-11-25",
-   "time": "12:00",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259707/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16074/el-director",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "Los juegos del hambre. Amanecer en la cosecha",
-   "date": "2026-11-25",
-   "time": "12:00",
-   "version": "VOSE",
-   "version_raw": "VOSE",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259705/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16076/los-juegos-del-hambre-amanecer-en-la-cosecha",
-   "special": false,
-   "source": "publicine"
-  },
-  {
-   "cinema_id": "kinepolis-splau",
-   "cinema_name": "Kinépolis Splau",
-   "film_title": "Scrooge y los fantasmas de la Navidad",
-   "date": "2026-11-25",
-   "time": "12:00",
-   "version": "Doblada",
-   "version_raw": "DIGITAL",
-   "ticket_url": "https://kinepolis.es/program/buy/1/1010259703/files/0/0",
-   "film_url": "https://www.publicine.net/pelicula/16120/scrooge-y-los-fantasmas-de-la-navidad",
-   "special": false,
-   "source": "publicine"
-  },
   {
    "cinema_id": "zumzeig",
    "cinema_name": "Zumzeig",
@@ -6330,6 +6161,19 @@
    "source": "zumzeig"
   },
   {
+   "cinema_id": "kinepolis-splau",
+   "cinema_name": "Kinépolis Splau",
+   "film_title": "El director",
+   "date": "2026-12-01",
+   "time": "19:30",
+   "version": "Doblada",
+   "version_raw": "DIGITAL",
+   "ticket_url": "https://kinepolis.es/program/buy/1/1010260778/files/0/0",
+   "film_url": "https://www.publicine.net/pelicula/16074/el-director",
+   "special": false,
+   "source": "publicine"
+  },
+  {
    "cinema_id": "cinemes-girona",
    "cinema_name": "Cinemes Girona",
    "film_title": "El cascanueces",
@@ -6817,8 +6661,8 @@
    "date": "2026-12-12",
    "time": "17:00",
    "version": "VOSE",
-   "version_raw": "Pendiente de confirmar",
-   "ticket_url": "https://zumzeigcine.coop/es/cine/sesiones/",
+   "version_raw": "VOSC",
+   "ticket_url": "https://www.codetickets.com/portal/zumzeigcooperativa/online/38582/105364",
    "film_url": "https://zumzeigcine.coop/es/cine/films/el-dia-que-ella-volvio/",
    "special": true,
    "source": "zumzeig"
