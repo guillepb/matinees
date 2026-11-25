@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: read  # lo necesita pages.yml (deploy-pages)
   pages: write
   id-token: write
 
